@@ -6,6 +6,7 @@ const Article = ({article}) => {
             <h4> Posted by {article.author}</h4>
             <p> Comments: {article.comment_count}</p>
             <p> Likes: {article.votes}</p>
+            <p> Posted {article.created_at}</p>
         </li>
         )
 }

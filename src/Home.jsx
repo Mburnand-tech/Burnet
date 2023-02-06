@@ -22,7 +22,7 @@ const Home = () => {
 
 
 
-    //console.log(articles)
+    console.log(articles)
     if (loading) return <p> Loading...</p>
 
     return (
