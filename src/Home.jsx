@@ -1,5 +1,5 @@
 import { useEffect , useState } from 'react'
-import { fetchArticles } from './utils'
+import { fetchAllArticles } from './utils'
 
 import Article from './Article'
 
@@ -11,17 +11,21 @@ const Home = () => {
 
     useEffect(()=> {
         setLoading(true)
-        fetchArticles()
+        fetchAllArticles()
         .then((data)=> {
             //console.log(data, "Mine")
             setArticles(data)
             setLoading(false)
         })
     }, [])
+    // Why is if I type 'articles in array above it creates an infinite loop
+
+
 
     //console.log(articles)
+    if (loading) return <p> Loading...</p>
+
     return (
-        //(loading) ? <p> page loading</p>:
         <ul>
             {
                 articles.map((article) => {
