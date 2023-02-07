@@ -1,10 +1,9 @@
 import { useEffect , useState } from 'react'
-import { useParams } from 'react-router-dom'
-
+import { useParams } from 'react-router-dom' 
 import { fetchAllArticles } from './utils'
 
-import Article from './Article'
 import Filter from './Filter'
+import RenderArticle from './RenderArticle'
 
 
 
@@ -30,10 +29,10 @@ const Content = () => {
     <ul>
     {
         articles.map((article) => {
-            return <li><Article article={article}/></li>
+            return <li key={article.article_id}><RenderArticle article={article}/></li>
         })
     }
-</ul>
+    </ul>
  )
 }
 

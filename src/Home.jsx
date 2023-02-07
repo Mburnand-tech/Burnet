@@ -1,7 +1,7 @@
 import { useEffect , useState } from 'react'
 import { fetchAllArticles } from './utils'
 
-import Article from './Article'
+import RenderArticle from './RenderArticle'
 
 
 
@@ -22,14 +22,14 @@ const Home = () => {
 
 
 
-    console.log(articles)
+    //console.log(articles)
     if (loading) return <p> Loading...</p>
 
     return (
         <ul>
             {
                 articles.map((article) => {
-                    return <li><Article article={article}/></li>
+                    return <li key={article.article_id}><RenderArticle article={article}/></li>
                 })
             }
         </ul>
