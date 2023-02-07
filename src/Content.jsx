@@ -1,21 +1,40 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from './Home'
-import LifeStyle from './LifeStyle';
-import Sports from './Sports';
-import Technology from './Technology'
+import { useEffect , useState } from 'react'
+import { useParams } from 'react-router-dom'
+
+import { fetchAllArticles } from './utils'
+
+import Article from './Article'
+import Filter from './Filter'
+
+
 
 const Content = () => {
-    return (
-        <body>
-            <Routes>
-                <Route path="/" element={<Home />}/>
-                <Route path="/coding" element={<Technology/>}/>
-                <Route path="/football" element={<Sports/>}/>
-                <Route path="/cooking" element={<LifeStyle/>}/>
-            </Routes>
-        </body>
-    )
+    const [ loading, setLoading ] = useState(false)
+    const [ articles, setArticles ] = useState([])
+    
+    const paraEnd  = useParams()
 
+    useEffect(()=> {
+        setLoading(true)
+        fetchAllArticles(paraEnd)
+        .then((data)=> {
+            setArticles(data)
+            setLoading(false)
+        })
+    }, [paraEnd])
+
+    if (loading) return <p> Loading...</p>
+
+ return (
+    <Filter/>,
+    <ul>
+    {
+        articles.map((article) => {
+            return <li><Article article={article}/></li>
+        })
+    }
+</ul>
+ )
 }
 
 export default Content

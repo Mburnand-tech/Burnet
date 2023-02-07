@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 const Nav = () => {
     return (
         <nav>
-            <Link to='/coding'> Technology</Link>
-            <Link to='/football'> Sports</Link>
-            <Link to='/cooking'> LifeStyle</Link>
+            <Link to='/category/coding'> Technology</Link>
+            <Link to='/category/football'> Sports</Link>
+            <Link to='/category/cooking'> LifeStyle</Link>
         </nav>
     )
 }
