@@ -1,15 +1,21 @@
 import { useContext, useState } from 'react'
 import { UserContext } from './contexts/UserContext'
 
-const User = () => {
+import React from "react"
 
+import { getUser } from './utils'
+
+import LoggedInSwitch from './LoggedInSwitch'
+import LoginForm from './LoginForm'
+
+const User = ({isLoggedIn, setIsLoggedIn}) => {
     const [currentUser, setCurrentUser] = useState(UserContext._currentValue.currentUser)
+    const [logInPortal, setLogInPortal] = useState(false)
 
     return (
         <div>
-            <p>Create User Button</p>
-            <p>Log in / Log out Button</p>
-            <p> User : {currentUser}</p>
+            <LoggedInSwitch isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} currentUser={currentUser} setLogInPortal={setLogInPortal}/>
+            <LoginForm setIsLoggedIn={setIsLoggedIn} setCurrentUser={setCurrentUser} logInPortal={logInPortal} setLogInPortal={setLogInPortal} />
         </div>
     )
 }

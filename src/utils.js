@@ -42,5 +42,11 @@ export const postComment = (article_id, comment, user) => {
     }).catch((err) => {
         console.log(err, "This is my error")
     })
-    
+}
+
+export const getUser = (user_name) => {
+    return homeAPI.get(`/api/users/${user_name}`)
+    .then(({data}) => {
+        return data
+    })
 }
