@@ -8,12 +8,13 @@ import Home from './Home'
 import Nav from './Nav'
 import Content from './Content';
 import Article from './Article';
-
+import User from './User'
 
 function App() {
   return (
     <div >
         <Header />
+        <User/>
         <Nav/>
         <Routes>
                 <Route path="/" element={<Home />}/>

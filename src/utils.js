@@ -31,9 +31,9 @@ export const getArticleReviews = (article_id) => {
     })
 }
 
-export const postComment = (article_id, comment) => {
+export const postComment = (article_id, comment, user) => {
     const config = {
-        "username" : "grumpy19",
+        "username" : user,
         "body" : comment
     }
     return homeAPI.post(`/api/articles/${article_id}/comments`, config)
