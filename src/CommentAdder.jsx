@@ -6,11 +6,12 @@ const CommentAdder = ({setArticleComments, article_id}) => {
     
     const handleSubmit = (e) => {
         e.preventDefault()
-        //console.log(newComment ,'Comment Submitted!')
-        //setArticleComments()
         postComment(article_id, newComment)
         .then((postedComment) => {
-            console.log(postedComment, "Posted Comment success")
+            setArticleComments((currComments) => {
+                return [postedComment[0], ...currComments]
+            })
+            setNewComment('')
         })
     }
     

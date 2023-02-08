@@ -32,17 +32,15 @@ export const getArticleReviews = (article_id) => {
 }
 
 export const postComment = (article_id, comment) => {
-    console.log(article_id, comment)
     const config = {
-        username : 'testUserName',
-        body : comment
+        "username" : "grumpy19",
+        "body" : comment
     }
-    console.log(config, "Our config")
     return homeAPI.post(`/api/articles/${article_id}/comments`, config)
-    .then(({body}) => {
-        console.log('CHeck')
-        console.log(body[0].body, "In Utils")
-        //return data.comment
+    .then(({data}) => {
+        return data
+    }).catch((err) => {
+        console.log(err, "This is my error")
     })
     
 }

@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom'
 import CommentAdder from './CommentAdder'
 
 const Article = () => {
-    //console.log('CHECK!')
     const [ loading, setLoading ] = useState(true)
     const [ articleContent , setArticleContent ] = useState([])
     const { article_id } = useParams()
@@ -13,21 +12,15 @@ const Article = () => {
     
     useEffect(() => {
         setLoading(true)
-        //console.log(loading, "MY loading")
         Promise.all([fetchSpecificArticle(article_id), getArticleReviews(article_id)])
         .then(([{article} , comments ]) => {
-            //console.log(data, "comment data")
             setArticleComments(comments)
             setLoading(false)
-            //console.log(loading, "MY loading")
             setArticleContent(article)
-            
-            
         })
     }, [article_id])
 
     if (loading) return <p> Loading...</p>
-
     return (
         <div>
             <div>
