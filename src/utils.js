@@ -50,6 +50,14 @@ export const likeArticle = ( article_id , increment) => {
     return homeAPI.patch(`/api/articles/${article_id}`, config)
 }
 
+export const likeComment = ( comment_id, increment ) => {
+    const config = {
+        inc_votes : increment
+    }
+    return homeAPI.patch(`/api/comments/${comment_id}`, config)  
+}
+
+
 export const getUser = (user_name) => {
     return homeAPI.get(`/api/users/${user_name}`)
     .then(({data}) => {
