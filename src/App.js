@@ -9,15 +9,11 @@ import Home from './Home'
 import Nav from './Nav'
 import Content from './Content';
 import Article from './Article';
-import LoggedInSwitch from './LoggedInSwitch'
-import LoginForm from './LoginForm';
 import User from './User'
 
 function App() {
   const [ isLoggedIn, setIsLoggedIn ] = useState(false)
   
-
-  //console.log(isLoggedIn, "Are they looged in?")
 
   return (
     <div >

@@ -1,21 +1,16 @@
-import { useContext, useState } from 'react'
-import { UserContext } from './contexts/UserContext'
-
+import { useState } from 'react'
 import React from "react"
-
-import { getUser } from './utils'
 
 import LoggedInSwitch from './LoggedInSwitch'
 import LoginForm from './LoginForm'
 
 const User = ({isLoggedIn, setIsLoggedIn}) => {
-    const [currentUser, setCurrentUser] = useState(UserContext._currentValue.currentUser)
     const [logInPortal, setLogInPortal] = useState(false)
 
     return (
         <div>
-            <LoggedInSwitch isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} currentUser={currentUser} setLogInPortal={setLogInPortal}/>
-            <LoginForm setIsLoggedIn={setIsLoggedIn} setCurrentUser={setCurrentUser} logInPortal={logInPortal} setLogInPortal={setLogInPortal} />
+            <LoggedInSwitch isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} setLogInPortal={setLogInPortal}/>
+            <LoginForm setIsLoggedIn={setIsLoggedIn} logInPortal={logInPortal} setLogInPortal={setLogInPortal} />
         </div>
     )
 }

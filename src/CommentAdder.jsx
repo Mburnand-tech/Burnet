@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import { postComment } from './utils'
 import { UserContext } from './contexts/UserContext'
+import { useContext } from 'react'
 
 const CommentAdder = ({setArticleComments, article_id}) => {
-    const [currentUser ] = useState(UserContext._currentValue.currentUser)
+    const {currentUser , setCurrentUser} = useContext(UserContext)
     const [newComment, setNewComment ] = useState('')
-    
-    
+
     const handleSubmit = (e) => {
         e.preventDefault()
-        postComment(article_id, newComment, currentUser)
+        postComment(article_id, newComment, currentUser[0].username)
         .then((postedComment) => {
             setArticleComments((currComments) => {
                 return [postedComment[0], ...currComments]

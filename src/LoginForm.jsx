@@ -1,10 +1,13 @@
 import React from "react"
 import { useState } from "react"
-
+import { useContext } from 'react'
 import { getUser } from './utils'
+import { UserContext } from './contexts/UserContext'
 
-const LoginForm = ({setIsLoggedIn, setCurrentUser, logInPortal, setLogInPortal}) => {
+const LoginForm = ({setIsLoggedIn, logInPortal, setLogInPortal}) => {
     const [ userNameEntry, setUserNameEntry ] = useState('')
+    const  {setCurrentUser}  = useContext(UserContext)
+
 
     const logInUser = (e) => {
         e.preventDefault()
@@ -42,5 +45,4 @@ const LoginForm = ({setIsLoggedIn, setCurrentUser, logInPortal, setLogInPortal})
         </div>
     )
 }
-//`${!isLoggedIn ? "active" : ""} show`
 export default LoginForm
