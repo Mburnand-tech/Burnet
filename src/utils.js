@@ -39,8 +39,6 @@ export const postComment = (article_id, comment, user) => {
     return homeAPI.post(`/api/articles/${article_id}/comments`, config)
     .then(({data}) => {
         return data
-    }).catch((err) => {
-        console.log(err, "This is my error")
     })
 }
 
