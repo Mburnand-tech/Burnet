@@ -13,7 +13,6 @@ const Home = () => {
         setLoading(true)
         fetchAllArticles()
         .then((data)=> {
-            //console.log(data, "Mine")
             setArticles(data)
             setLoading(false)
         })
@@ -21,8 +20,6 @@ const Home = () => {
     // Why is if I type 'articles in array above it creates an infinite loop
 
 
-
-    //console.log(articles)
     if (loading) return <p> Loading...</p>
 
     return (

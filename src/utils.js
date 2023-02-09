@@ -42,5 +42,14 @@ export const postComment = (article_id, comment) => {
     }).catch((err) => {
         console.log(err, "This is my error")
     })
-    
+}
+
+export const likeArticle = ( article_id , increment) => {
+    const config = {
+        inc_votes : increment
+    }
+    return homeAPI.patch(`/api/articles/${article_id}`, config)
+    .then(({data}) => {
+        return data
+    })
 }

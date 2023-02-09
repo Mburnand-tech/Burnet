@@ -1,13 +1,11 @@
 import { Link } from 'react-router-dom' 
-//import { Routes, Route } from 'react-router-dom';
-//import Article from './Article';
 
 const RenderArticle = ({article}) => {
 
    
 
     return (
-        // <p>{article.article_id}</p>
+        
         <div>
             <Link to={`/articles/${article.article_id}`}>
                 <img src={article.article_img_url} alt={article.title}></img>
