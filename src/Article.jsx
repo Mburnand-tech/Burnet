@@ -13,6 +13,7 @@ const Article = () => {
     const [votedOn , setVotedOn ] = useState(false)
     //----------- Weird how it only works for true in this doc but false in th Content doc
     
+
     useEffect(() => {
         setLoading(true)
         Promise.all([fetchSpecificArticle(article_id), getArticleReviews(article_id)])
