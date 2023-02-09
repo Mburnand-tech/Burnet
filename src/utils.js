@@ -31,16 +31,20 @@ export const getArticleReviews = (article_id) => {
     })
 }
 
-export const postComment = (article_id, comment) => {
+export const postComment = (article_id, comment, user) => {
     const config = {
-        "username" : "grumpy19",
+        "username" : user,
         "body" : comment
     }
     return homeAPI.post(`/api/articles/${article_id}/comments`, config)
     .then(({data}) => {
         return data
-    }).catch((err) => {
-        console.log(err, "This is my error")
     })
-    
+}
+
+export const getUser = (user_name) => {
+    return homeAPI.get(`/api/users/${user_name}`)
+    .then(({data}) => {
+        return data
+    })
 }
