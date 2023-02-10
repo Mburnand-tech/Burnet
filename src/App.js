@@ -1,7 +1,6 @@
 import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
-//import { Link } from 'react-router-dom' 
 import { useState } from 'react'
 
 import Header from './Header'

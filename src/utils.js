@@ -5,7 +5,9 @@ const homeAPI = axios.create({
 })
 
 export const fetchAllArticles = (configObj) => {
+    //console.log(configObj, "On other side")
     return homeAPI.get('/api/articles', {params: configObj})
+    //return homeAPI.get('/api/articles', configObj)
     .then(({data}) => {
         //console.log(data, "In Utils")
         return data

@@ -2,6 +2,7 @@ import { useEffect , useState } from 'react'
 import { fetchSpecificArticle , getArticleReviews, likeArticle, likeComment } from './utils'
 import { useParams } from 'react-router-dom'
 import CommentAdder from './CommentAdder'
+import { Button } from '@mui/material';
 
 
 const Article = () => {
@@ -13,7 +14,7 @@ const Article = () => {
     const [errComment, setErrComment] = useState('')
     const [votedOnArticle , setVotedOnArticle ] = useState(false)
     const [votedOnComment , setVotedOnComment ] = useState(false)
-    //----------- Weird how it only works for true in this doc but false in th Content doc
+    //----------- Weird how it only works for true in this doc but false in the Content doc
     
 
     useEffect(() => {
@@ -86,8 +87,6 @@ const Article = () => {
         }
     }
         
-    
-    console.log(articleComments, "current Articles")
 
     if (loading) return <p> Loading...</p>
     return (
@@ -97,7 +96,7 @@ const Article = () => {
                 <h3>Date:{articleContent[0].created_at}</h3>
                 <h3>Created by: {articleContent[0].author}</h3>
                 <p>{articleContent[0].body} </p>
-                <button onClick={() => handleArticleLike()}>👍 {articleContent[0].votes}</button>
+                <Button onClick={() => handleArticleLike()}>👍 {articleContent[0].votes}</Button>
                 {errArticle !== '' ? <p>{errArticle.message}</p>: ''}
             </div>
             <h2>Comments</h2>
@@ -109,7 +108,7 @@ const Article = () => {
                             <h5>{comment.author}</h5>
                             <p>{comment.created_at}</p>
                             <p>{comment.body}</p>
-                            <button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</button>
+                            <Button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</Button>
                             {errComment !== '' ? <p>{errComment.message}</p>: ''}
                         </li>
                     )
