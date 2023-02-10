@@ -1,5 +1,5 @@
 import { useEffect , useState } from 'react'
-import { fetchSpecificArticle , getArticleReviews, likeArticle } from './utils'
+import { fetchSpecificArticle , getArticleReviews, likeArticle, likeComment } from './utils'
 import { useParams } from 'react-router-dom'
 import CommentAdder from './CommentAdder'
 
@@ -9,8 +9,10 @@ const Article = () => {
     const [ articleContent , setArticleContent ] = useState([])
     const { article_id } = useParams()
     const [ articleComments, setArticleComments ] = useState([])
-    const [err, setErr] = useState('')
-    const [votedOn , setVotedOn ] = useState(false)
+    const [errArticle, setErrArticle] = useState('')
+    const [errComment, setErrComment] = useState('')
+    const [votedOnArticle , setVotedOnArticle ] = useState(false)
+    const [votedOnComment , setVotedOnComment ] = useState(false)
     //----------- Weird how it only works for true in this doc but false in th Content doc
     
 
@@ -25,29 +27,67 @@ const Article = () => {
     }, [article_id])
 
     const handleArticleLike = () => {
-        if (votedOn === false){
-            setVotedOn(true)
+        if (votedOnArticle === false){
+            setVotedOnArticle(true)
             setArticleContent((currContent) => {
                 currContent[0].votes += 1
                 return {...currContent}
             })
             likeArticle(article_id, 1)
             .catch((err) => {
-                setErr(err)
+                setErrArticle(err)
             })
         }
-        else if (votedOn === true){
-            setVotedOn(false)
+        else if (votedOnArticle === true){
+            setVotedOnArticle(false)
             setArticleContent((currContent) => {
                 currContent[0].votes -= 1
                 return {...currContent}
             })
             likeArticle(article_id, -1)
             .catch((err) => {
-                setErr(err)
+                setErrArticle(err)
             })
         }
     }
+
+    const handleCommentLike = (comment_id) => {
+        if (votedOnComment === false){
+            setVotedOnComment(true)
+            setArticleComments((currComments) => {
+                let adjustComments = [...currComments]
+                adjustComments.map((comment) => {
+                    if (comment.comment_id === comment_id){
+                        comment.votes += 1                      
+                    }
+                })
+                return adjustComments
+            })
+            likeComment(comment_id, 1)
+            .catch((err) => {
+                setErrComment(err)
+            })
+        }
+        else if (votedOnComment === true){
+            setVotedOnComment(false)
+            setArticleComments((currComments) => {
+                let adjustComments = [...currComments]
+                adjustComments.map((comment) => {
+                    if (comment.comment_id === comment_id){
+                        comment.votes -= 1                      
+                    }
+                })
+                return adjustComments
+            })
+            likeComment(comment_id, -1)
+            .catch((err) => {
+                setErrComment(err)
+            })
+        }
+    }
+        
+    
+    console.log(articleComments, "current Articles")
 
     if (loading) return <p> Loading...</p>
     return (
@@ -57,8 +97,8 @@ const Article = () => {
                 <h3>Date:{articleContent[0].created_at}</h3>
                 <h3>Created by: {articleContent[0].author}</h3>
                 <p>{articleContent[0].body} </p>
-                <button onClick={handleArticleLike}>👍 {articleContent[0].votes}</button>
-                {err !== '' ? <p>{err.message}</p>: ''}
+                <button onClick={() => handleArticleLike()}>👍 {articleContent[0].votes}</button>
+                {errArticle !== '' ? <p>{errArticle.message}</p>: ''}
             </div>
             <h2>Comments</h2>
             <CommentAdder setArticleComments={setArticleComments} article_id={article_id}/>
@@ -69,7 +109,8 @@ const Article = () => {
                             <h5>{comment.author}</h5>
                             <p>{comment.created_at}</p>
                             <p>{comment.body}</p>
-                            <p>{comment.votes}</p>
+                            <button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</button>
+                            {errComment !== '' ? <p>{errComment.message}</p>: ''}
                         </li>
                     )
                 })}
