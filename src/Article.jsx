@@ -1,5 +1,5 @@
 import { useEffect , useState, useContext } from 'react'
-import { fetchSpecificArticle , getArticleReviews, likeArticle, likeComment } from './utils'
+import { fetchSpecificArticle , getArticleReviews, likeArticle, likeComment, deleteComment } from './utils'
 import { useParams } from 'react-router-dom'
 import CommentAdder from './CommentAdder'
 import { Button } from '@mui/material';
@@ -93,6 +93,12 @@ const Article = () => {
             })
         }
     }
+
+    const handleDeleteComment = (comment_id) => {
+        console.log("This will delete a comment")
+        deleteComment(comment_id)
+        // onClick={()=> handleDeleteComment()}
+    }
         
 
     if (loading) return <p> Loading...</p>
@@ -116,7 +122,7 @@ const Article = () => {
                             <p>{comment.created_at}</p>
                             <p>{comment.body}</p>
                             <Button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</Button>
-                            {comment.author === currentUser[0].username ? <Button>delete comment</Button> : null}
+                            {comment.author === currentUser[0].username ? <Button onClick={()=> handleDeleteComment(comment.comment_id)}>delete</Button> : null}
                             {errComment !== '' ? <p>{errComment.message}</p>: ''}
                         </li>
                     )

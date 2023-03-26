@@ -66,3 +66,7 @@ export const getUser = (user_name) => {
         return data
     })
 }
+
+export const deleteComment = (comment_id) => {
+    return homeAPI.delete(`/api/comments/${comment_id}`)
+}
