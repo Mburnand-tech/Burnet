@@ -1,11 +1,14 @@
-import { useEffect , useState } from 'react'
+import { useEffect , useState, useContext } from 'react'
 import { fetchSpecificArticle , getArticleReviews, likeArticle, likeComment } from './utils'
 import { useParams } from 'react-router-dom'
 import CommentAdder from './CommentAdder'
 import { Button } from '@mui/material';
-
+import { UserContext } from './contexts/UserContext'
 
 const Article = () => {
+
+    //console.log(UserLoggedIn, "user logged in")
+
     const [ loading, setLoading ] = useState(true)
     const [ articleContent , setArticleContent ] = useState([])
     const { article_id } = useParams()
@@ -14,8 +17,12 @@ const Article = () => {
     const [errComment, setErrComment] = useState('')
     const [votedOnArticle , setVotedOnArticle ] = useState(false)
     const [votedOnComment , setVotedOnComment ] = useState(false)
+
+
+    const  {currentUser}  = useContext(UserContext)
     //----------- Weird how it only works for true in this doc but false in the Content doc
-    
+    console.log(currentUser[0].username, "Current user")
+    //console.log('check')
 
     useEffect(() => {
         setLoading(true)
@@ -59,7 +66,7 @@ const Article = () => {
                 let adjustComments = [...currComments]
                 adjustComments.map((comment) => {
                     if (comment.comment_id === comment_id){
-                        comment.votes += 1                      
+                        comment.votes += 1                     
                     }
                 })
                 return adjustComments
@@ -109,6 +116,7 @@ const Article = () => {
                             <p>{comment.created_at}</p>
                             <p>{comment.body}</p>
                             <Button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</Button>
+                            {comment.author === currentUser[0].username ? <Button>delete comment</Button> : null}
                             {errComment !== '' ? <p>{errComment.message}</p>: ''}
                         </li>
                     )
