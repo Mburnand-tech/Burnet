@@ -7,7 +7,7 @@ import { UserContext } from './contexts/UserContext'
 
 const Article = () => {
 
-    //console.log(UserLoggedIn, "user logged in")
+    const  {currentUser}  = useContext(UserContext)
 
     const [ loading, setLoading ] = useState(true)
     const [ articleContent , setArticleContent ] = useState([])
@@ -19,10 +19,7 @@ const Article = () => {
     const [votedOnComment , setVotedOnComment ] = useState(false)
 
 
-    const  {currentUser}  = useContext(UserContext)
     //----------- Weird how it only works for true in this doc but false in the Content doc
-    console.log(currentUser[0].username, "Current user")
-    //console.log('check')
 
     useEffect(() => {
         setLoading(true)
@@ -95,9 +92,13 @@ const Article = () => {
     }
 
     const handleDeleteComment = (comment_id) => {
-        console.log("This will delete a comment")
+        
+        const filtered = articleComments.filter(rmComment => 
+            rmComment.comment_id !== comment_id)
+        
+        setArticleComments([...filtered])
+
         deleteComment(comment_id)
-        // onClick={()=> handleDeleteComment()}
     }
         
 
@@ -122,14 +123,13 @@ const Article = () => {
                             <p>{comment.created_at}</p>
                             <p>{comment.body}</p>
                             <Button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</Button>
-                            {comment.author === currentUser[0].username ? <Button onClick={()=> handleDeleteComment(comment.comment_id)}>delete</Button> : null}
+                            {currentUser === 'null' ? null : comment.author === currentUser[0].username ? <Button onClick={()=> handleDeleteComment(comment.comment_id)}>delete</Button> : null}
                             {errComment !== '' ? <p>{errComment.message}</p>: ''}
                         </li>
                     )
                 })}
             </ul>
         </div>
-
     )
 }
 

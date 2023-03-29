@@ -28,17 +28,19 @@ const CommentAdder = ({setArticleComments, article_id}) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label htmlFor="newComment"> Add a comment</label>
-            <textarea 
-            id="newComment"
-            value={newComment}
-            onChange={(e) => setNewComment(e.target.value)}
-            ></textarea>
-            {isLoading == false ? <button>Add</button> : ''}
-            {currentUser.length === undefined ? <p>Please log in to make comment</p>:''}
-            {err !== '' ? <p>{err.message}</p>:''}
-        </form>
+        <div>
+            {currentUser === 'null' ? <p>Please log in to make comment</p>:
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="newComment"> Add a comment</label>
+                <textarea 
+                id="newComment"
+                value={newComment}
+                onChange={(e) => setNewComment(e.target.value)}
+                ></textarea>
+                {isLoading == false ? <button>Add</button> : ''}
+                {err !== '' ? <p>{err.message}</p>:''}
+            </form>}
+        </div>
     )
 }
 
