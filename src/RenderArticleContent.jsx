@@ -4,6 +4,18 @@ import { Link } from 'react-router-dom'
 
 const RenderArticle = ({article}) => {
 
+    const [articleContent, setArticleContent] = useState('')
+
+    useEffect(()=> {
+        fetchSpecificArticle(article.article_id)
+        .then(({article}) => {
+            setArticleContent(article[0].body)
+            
+        })
+    }, [article.article_id])
+   
+
+
     return (
         
         <div>
@@ -13,6 +25,7 @@ const RenderArticle = ({article}) => {
             </Link>
                 <p> Posted {article.created_at}</p>
                 <h4> Posted by {article.author}</h4>
+                <p>{articleContent}</p>
                 <p> Comments: {article.comment_count}</p>
                 <p> Likes: {article.votes}</p>
                 

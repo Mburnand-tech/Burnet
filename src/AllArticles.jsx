@@ -2,7 +2,7 @@ import { useEffect , useState } from 'react'
 import { useSearchParams , useParams} from 'react-router-dom' 
 import { fetchAllArticles } from './utils'
 
-import RenderArticle from './RenderArticle'
+import RenderArticle from './RenderArticleContent'
 
 const AllArticles = () => {
     
@@ -17,7 +17,6 @@ const AllArticles = () => {
         const newParams = new URLSearchParams(searchParams)
         newParams.set('topic', topic)
         setSearchParams(newParams)
-
 
         fetchAllArticles(searchParams)
         .then((data)=> {

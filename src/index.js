@@ -8,9 +8,9 @@ import { UserLoggedIn } from './contexts/UserContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <UserLoggedIn>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
   </UserLoggedIn>
 );
 

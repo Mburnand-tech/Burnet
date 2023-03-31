@@ -1,9 +1,8 @@
 import { useEffect , useState } from 'react'
 import { fetchAllArticles } from './utils'
+import styles from "./App.module.css"
 
 import RenderArticle from './RenderArticle'
-
-
 
 const Home = () => {
     const [ loading, setLoading ] = useState(false)
@@ -19,14 +18,13 @@ const Home = () => {
     }, [])
     // Why is if I type 'articles in array above it creates an infinite loop
 
-
     if (loading) return <p> Loading...</p>
 
     return (
         <ul>
             {
                 articles.map((article) => {
-                    return <li key={article.article_id}><RenderArticle article={article}/></li>
+                    return <li key={article.article_id} className={styles.article}><RenderArticle article={article}/></li>
                 })
             }
         </ul>
