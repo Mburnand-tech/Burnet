@@ -2,6 +2,8 @@ import { useEffect , useState } from 'react'
 import { useSearchParams , useParams} from 'react-router-dom' 
 import { fetchAllArticles } from './utils'
 
+import './App.css'
+
 import RenderArticle from './RenderArticleContent'
 
 const AllArticles = () => {
@@ -25,7 +27,7 @@ const AllArticles = () => {
         })
     }, [searchParams, setSearchParams, topic])
 
-    if (loading) return <p> Loading...</p>
+    if (loading) return <p className={`App loadingPage`}> Loading...</p>
 
     return (
         <ul>

@@ -4,12 +4,30 @@
   height: 100%;
 }
 
-.article {
+.light{
+  background-color: #f2dfce
+}
+.dark{
+  background-color: #0D7680;
+}
+
+.loadingPage{
+  height: 5000px; 
+}
+.homeArticles {
   color: red;
   padding: 40px;
   outline: auto;
-  font-family: Arial;
-  text-align: center;
+  /* font-family: Arial;
+  text-align: center; */
+}
+
+.subjectArticles {
+  color: red;
+  padding: 40px;
+  outline: auto;
+  /* font-family: Arial;
+  text-align: center; */
 }
 
 /* export default StyleSheet.create({

@@ -1,6 +1,6 @@
 import { useEffect , useState } from 'react'
 import { fetchAllArticles } from './utils'
-import styles from "./App.module.css"
+import styles from "./App.css"
 
 import RenderArticle from './RenderArticle'
 
@@ -18,7 +18,7 @@ const Home = () => {
     }, [])
     // Why is if I type 'articles in array above it creates an infinite loop
 
-    if (loading) return <p> Loading...</p>
+    if (loading) return <p className={`App loadingPage`}> Loading...</p>
 
     return (
         <ul>
