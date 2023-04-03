@@ -2,6 +2,8 @@ import {  Switch, FormControl, FormLabel, RadioGroup, FormControlLabel, Radio} f
 
 import { useSearchParams } from 'react-router-dom' 
 
+import './App.css';
+
 const Filter = () => {
     const [searchParams, setSearchParams] = useSearchParams({})
 
@@ -19,9 +21,9 @@ const Filter = () => {
     
     }
 
-
+//className='checkbox-dropdown'
  return (
-        <FormControl className='checkbox-dropdown'>
+        <FormControl className={'App filterBar'} >
             <FormLabel>Filter Results</FormLabel>
             <RadioGroup defaultValue='date'><label>Sort By</label>
                 <FormControlLabel value="date" onChange={setSortBy} control={<Radio />} label='Date'/>
