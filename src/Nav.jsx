@@ -1,11 +1,11 @@
-import { useContext} from 'react'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom' 
 import { Switch } from '@mui/material'
 import { ThemeContext } from './contexts/themeContext'
 
 import './App.css';
 
-const Nav = ({theme, setTheme}) => {
+const Nav = () => {
 
     const  { currentTheme, setCurrentTheme }  = useContext(ThemeContext)
 
@@ -14,7 +14,7 @@ const Nav = ({theme, setTheme}) => {
     }
 
     return (
-        <nav className={'App navBar'}>
+        <nav className={'App navBar'} >
             <Link to='/category/coding'> Technology</Link>
             <Link to='/category/football' > Sports</Link>
             <Link to='/category/cooking' > LifeStyle</Link>

@@ -18,8 +18,7 @@ const Home = () => {
     }, [])
     // Why is if I type 'articles in array above it creates an infinite loop
 
-    if (loading) return <p className={`App loadingPage`}
-    > Loading...</p>
+    if (loading) return <p className={`App loadingPage`}> Loading...</p>
 
     return (
         <ul>

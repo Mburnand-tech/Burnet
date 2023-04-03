@@ -8,7 +8,7 @@ const RenderArticle = ({article}) => {
         
         <div className={`App homeArticles`}>
             <Link to={`/articles/${article.article_id}`}>
-                <img src={article.article_img_url} alt={article.title}></img>
+                <img className={'App homeArticlesPicture'} src={article.article_img_url} alt={article.title}></img>
                 <h3> {article.title}</h3>
             </Link>
                 <p> Posted {article.created_at}</p>
