@@ -25,6 +25,7 @@ const LoginForm = ({setIsLoggedIn, logInPortal, setLogInPortal}) => {
     }
 
     return (
+        // {true === true ? }
         <div className={`${!logInPortal ? "active" : ""} show`}>
             <div className="login-form">
                 <div className="form-box solid">

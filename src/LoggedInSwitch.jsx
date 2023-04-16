@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import { UserContext } from './contexts/UserContext'
+import { Avatar } from '@mui/material'
 
 
 const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
@@ -20,7 +21,7 @@ const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
         return (
             <div>
                 <button onClick={handleSignOut}>Log out</button>
-                <img src={currentUser[0].avatar_url} alt='profile'></img>
+                <Avatar src={currentUser[0].avatar_url} alt='profile'  sx={{ width: 44, height: 44 }} variant="rounded"/>
                 <h5>{currentUser[0].name}</h5>
                 <p> User : {currentUser[0].username}</p>
             </div>
