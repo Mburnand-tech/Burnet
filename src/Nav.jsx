@@ -15,10 +15,10 @@ const Nav = () => {
 
     return (
         <nav className={'App navBar'} >
-            <Link to='/category/coding'> Technology</Link>
-            <Link to='/category/football' > Sports</Link>
-            <Link to='/category/cooking' > LifeStyle</Link>
-            <Switch onChange={() => {changeTheme()}}></Switch>
+            <Link className={'App navBarElement'} to='/category/coding'> Technology</Link>
+            <Link className={'App navBarElement'} to='/category/football' > Sports</Link>
+            <Link className={'App navBarElement'} to='/category/cooking' > LifeStyle</Link>
+            <Switch className={'App themeButton'} onChange={() => {changeTheme()}}></Switch>
         </nav>
     )
 }

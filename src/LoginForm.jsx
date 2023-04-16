@@ -27,7 +27,24 @@ const LoginForm = ({setIsLoggedIn, logInPortal, setLogInPortal}) => {
     return (
         // {true === true ? }
         <div className={`${!logInPortal ? "active" : ""} show`}>
+            {logInPortal?
             <div className="login-form">
+            <div className="form-box solid">
+                <form onSubmit={logInUser}>
+                    <h1 className="login-text"> Sign In</h1>
+                    <label>Username</label><br></br>
+                    <input
+                        value={userNameEntry}
+                        type="text"
+                        name="username"
+                        className="login-box"
+                        onChange={(e)=> setUserNameEntry(e.target.value)}
+                    /><br></br>
+                    <input type="submit" value="LOGIN" className="login-btn"/>
+                </form>
+            </div>
+        </div> : null}
+            {/* <div className="login-form">
                 <div className="form-box solid">
                     <form onSubmit={logInUser}>
                         <h1 className="login-text"> Sign In</h1>
@@ -42,7 +59,7 @@ const LoginForm = ({setIsLoggedIn, logInPortal, setLogInPortal}) => {
                         <input type="submit" value="LOGIN" className="login-btn"/>
                     </form>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

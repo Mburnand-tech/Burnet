@@ -4,13 +4,32 @@
   height: 100%;
 }
 
+/* LOG IN TRANSITION */
+.show {
+  display: block;
+  transition: 600ms;
+  opacity: 1;
+}
+
+
+.show.active {
+  transform: translateY(100px) scale(0) rotateY(180deg);
+  opacity: 0;
+  outline: auto;
+  color: blue;
+}
+
 /* THEME */
 .light{
-  background-color: #f2dfce
+  background-color: #f2dfce;
 }
 .dark{
   background-color: #0D7680;
 }
+.themeButton{
+  float: right;
+}
+
 
 .loadingPage{
   height: 5000px; 
@@ -24,12 +43,15 @@
   position: static;
   margin: auto;
   clear: Inline-end;
-  padding: 70px
+  padding: 0.5%
 
 }
 .logo{
   float: left;
-  /* padding: 1.5%; */
+  padding-right: 4.5%;
+  padding-left: 1.5%;
+  /* height: 40%;
+  width: 40%; */
 }
 
 .signIn{
@@ -38,27 +60,41 @@
 
 .navBar{
   bottom: 40px;
+  margin: 2%;
+  padding: 1.5%;
 }
+
+.navBarElement{
+  padding: 8px;
+}
+
 
 /* HOME PAGE */
 .homeArticles {
   color: red;
   padding: auto;
-  float: centre;
   margin: auto;
   outline: auto;
   height: 55%;
   width: 80%;
 }
 .homeArticlesPicture {
-  height: 55%;
-  width: 55%;
+  height: 25%;
+  width: 25%;
   float: right;
 }
 
 
 /* SUBJECT PAGE */
 .subjectArticles {
+  color: blue;
+  padding: auto;
+  margin: auto;
+  outline: auto;
+  height: 55%;
+  width: 80%;
+}
+/* .subjectArticles {
   color: blue;
   padding: 10px;
   outline: auto;
@@ -67,7 +103,7 @@
   height: 20%;
   width: 70%;
   text-align: left;
-}
+} */
 .subjectArticlesPicture {
   height: 25%;
   width: 25%;

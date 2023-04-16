@@ -14,10 +14,10 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
     <header className={`App header`}>
         <nav>
             <Link className={' App logo'} to="/">        
-                <Avatar 
+                <Avatar
                     alt='Homepicture'
                     src={logo}
-                    sx={{ width: 84, height: 84 }}
+                    sx={{ width: 70, height: 70 }}
                     />
             </Link>
             <User isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
