@@ -30,7 +30,7 @@ const AllArticles = () => {
     if (loading) return <p className={`App loadingPage`}> Loading...</p>
 
     return (
-        <ul>
+        <ul className={'App subjectArticlesList'}>
         {
             articles.map((article) => {
                 return <li key={article.article_id}><RenderArticle article={article}/></li>

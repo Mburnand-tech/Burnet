@@ -24,23 +24,23 @@ const Filter = () => {
 //className='checkbox-dropdown'
  return (
         <FormControl className={'App filterBar'} >
-            <FormLabel>Filter Results</FormLabel>
-            <RadioGroup defaultValue='date'><label>Sort By</label>
-                <FormControlLabel value="date" onChange={setSortBy} control={<Radio />} label='Date'/>
-                <FormControlLabel value="author" onChange={setSortBy} control={<Radio />} label='Author'/>
-                <FormControlLabel value="title" onChange={setSortBy} control={<Radio />} label='Title'/>
-                <FormControlLabel value="votes" onChange={setSortBy} control={<Radio />} label='Votes'/>
-                <FormControlLabel value="comment_count" onChange={setSortBy} control={<Radio />} label='Amount of Comments'/>
+            <FormLabel className={' App filterBarButtons'}>Filter Results</FormLabel>
+            <RadioGroup className={' App filterBarButtons'} defaultValue='date'><label>Sort By:</label>
+                <FormControlLabel className={' App filterBarButtons'} value="date" onChange={setSortBy} control={<Radio />} label='Date'/>
+                <FormControlLabel className={' App filterBarButtons'} value="author" onChange={setSortBy} control={<Radio />} label='Author'/>
+                <FormControlLabel  className={' App filterBarButtons'}value="title" onChange={setSortBy} control={<Radio />} label='Title'/>
+                <FormControlLabel className={' App filterBarButtons'} value="votes" onChange={setSortBy} control={<Radio />} label='Votes'/>
+                <FormControlLabel className={' App filterBarButtons'} value="comment_count" onChange={setSortBy} control={<Radio />} label='Comments'/>
             </RadioGroup>
-            <label>Order By</label>
+            <label className={' App filterBarButtons'}>Order By:</label>
             <div></div>
-            <span className="ToggleLightMode--inline-text">Desc</span>
+            <span className={' App filterBarButtons'}>Desc</span>
                 <Switch
                  onChange={setOrderBy}
-                 size="large"
+                 size="small"
                  inputProps={{ 'aria-label': 'controlled' }}
                />
-               <span className="ToggleLightMode--inline-text">Asc</span>
+               <span className={' App filterBarButtons'}>Asc</span>
         </FormControl>
     )
 }

@@ -70,7 +70,7 @@
 .themeButton{
   float: right;
   top: -25px;
-  right: -10%
+  right: -80px
 }
 
 .navBar{
@@ -101,43 +101,76 @@
 
 
 /* SUBJECT PAGE */
-.subjectArticles {
-  color: blue;
-  padding: auto;
-  margin: auto;
-  outline: auto;
-  height: 55%;
-  width: 80%;
+.subjectArticlesList{
+  margin-left: 110px;
+  margin-right: 2%;
+  list-style-type: none;
 }
-/* .subjectArticles {
+
+.subjectArticles{
   color: blue;
-  padding: 10px;
+  /* padding: auto; */
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-left: 0%;
   outline: auto;
-  float: right;
-  margin: 5%;
-  height: 20%;
-  width: 70%;
-  text-align: left;
-} */
+  /* height: 55%;*/
+  right: 0px;
+  left: 0%;
+  width: 100%;
+  height: 300px;
+  /* box-sizing: border-box; */
+
+  
+}
 .subjectArticlesPicture {
-  height: 25%;
-  width: 25%;
+  height: 55%;
+  width: 35%;
   float: right;
 }
 .subjectArticlesBody {
   font-size: 12px;
+  -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
 }
 
+.postedDate{
+  margin: 0%;
+}
+
+.postedBy{
+  /* width:50%; */
+  margin: 0% !important;
+  border: 0%;
+  box-sizing: border-box;
+}
+
+.articleComments{
+  margin: 0%;
+}
+
+.articleLikes{
+  margin: 0%;
+}
+
+.articleTitle{
+  margin: 0px
+}
 
 /* FILTER BAR  */
 .filterBar {
   color: purple;
-  outline:auto;
-  padding: auto;
+  background-color: whitesmoke;
+  width: 125px;
+  min-width: 13%;
   float: left;
-  top: 100px;
-  left: 5px;
-  margin: 5%;
-  position: fixed;
+  top: 40px;
+  left: 10px;
+  position: fixed;  
 }
+
+.filterBarButtons{
+  margin-left: 10%;
+}
+
+
 
