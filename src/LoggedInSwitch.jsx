@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { UserContext } from './contexts/UserContext'
 import { Avatar } from '@mui/material'
 
+import './App.css';
 
 const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
     
@@ -20,7 +21,7 @@ const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
     if (isLoggedIn=== true){
         return (
             <div>
-                <button onClick={handleSignOut}>Log out</button>
+                <button onClick={handleSignOut} className={"App signIn"}>Log out</button>
                 <Avatar src={currentUser[0].avatar_url} alt='profile'  sx={{ width: 44, height: 44 }} variant="rounded"/>
                 <h5>{currentUser[0].name}</h5>
                 <p> User : {currentUser[0].username}</p>
@@ -29,8 +30,8 @@ const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
     }
     if (isLoggedIn === false){
         return (
-            <div>
-                <button onClick={handleLogin} className="loginicon">Sign in</button>
+            <div className={"App signIn"}>
+                <button onClick={handleLogin} className={"App signIn"}>Sign in</button>
             </div>
         )
     }

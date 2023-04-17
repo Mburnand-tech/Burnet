@@ -9,6 +9,11 @@
   display: block;
   transition: 600ms;
   opacity: 1;
+  float: top;
+  float: right;
+  margin-right: 150%;
+  margin-top: -100%;
+
 }
 
 
@@ -17,6 +22,7 @@
   opacity: 0;
   outline: auto;
   color: blue;
+  right: 50px;
 }
 
 /* THEME */
@@ -26,9 +32,7 @@
 .dark{
   background-color: #0D7680;
 }
-.themeButton{
-  float: right;
-}
+
 
 
 .loadingPage{
@@ -56,6 +60,17 @@
 
 .signIn{
   float: right;
+  top: 5px;
+  right: 50px;
+  margin-top: 3%;
+  margin-right: 3%;
+  width: 59px;
+}
+
+.themeButton{
+  float: right;
+  top: -25px;
+  right: -10%
 }
 
 .navBar{
