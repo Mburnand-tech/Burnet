@@ -20,17 +20,15 @@ const RenderArticle = ({article}) => {
 
     return (
         <Link to={`/articles/${article.article_id}`}>
-        <div className={'App subjectArticles'}>
+            <div className={'App subjectArticles'}>
                 <p className={'App postedDate'}> Posted {article.created_at}</p>
                 <h4 className={'App postedBy'}> Posted by {article.author}</h4>
                 <img src={article.article_img_url} alt={article.title} className={' App subjectArticlesPicture'}></img>
                 <h3 className={'App articleTitle'}> {article.title}</h3>
-            
                 <p className={' App subjectArticlesBody'}>{articleContent}</p>
                 <p className={'App articleComments'}> Comments: {article.comment_count}</p>
-                <p className={'App articleLikes'}> Likes: {article.votes}</p>
-                
-        </div>
+                <p className={'App articleLikes'}> Likes: {article.votes}</p>    
+            </div>
         </Link>
     )
 }
