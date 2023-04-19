@@ -17,13 +17,13 @@ const RenderArticle = ({article}) => {
         })
     }, [article.article_id])
    
-
-
     return (
-        <Link to={`/articles/${article.article_id}`}>
+        <Link className={'app articleLink'} to={`/articles/${article.article_id}`}>
             <div >
-                <p className={'App postedDate'}> Posted {moment(article.created_at, "YYYYMMDD").startOf('hour').fromNow()}</p>
+
+                <h4 className={'App topic'}>{article.topic}</h4>
                 <h4 className={'App postedBy'}> Posted by {article.author}</h4>
+                <p className={'App postedDate'}>{moment(article.created_at, "YYYYMMDD").startOf('hour').fromNow()}</p>
                 <img src={article.article_img_url} alt={article.title} className={' App subjectArticlesPicture'}></img>
                 <h3 className={'App articleTitle'}> {article.title}</h3>
                 <p className={' App subjectArticlesBody'}>{articleContent}</p>

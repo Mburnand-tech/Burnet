@@ -8,15 +8,6 @@ import './App.css'
 import RenderArticle from './RenderArticleContent'
 
 
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         "& > *": {
-//             margin: 
-//         background-color: '#f2dfce'
-//         }
-//     }
-// }))
-
 const AllArticles = () => {
     
     const [ loading, setLoading ] = useState(false)

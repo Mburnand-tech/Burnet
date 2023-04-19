@@ -1,10 +1,11 @@
 import { useEffect , useState, useContext } from 'react'
-import { fetchSpecificArticle , getArticleReviews, likeArticle, likeComment, deleteComment } from './utils'
+import { fetchSpecificArticle , getArticleReviews, likeArticle, likeComment, deleteComment, getUser } from './utils'
 import { useParams } from 'react-router-dom'
 import CommentAdder from './CommentAdder'
 import { Button } from '@mui/material';
 import { UserContext } from './contexts/UserContext'
 import moment from 'moment-timezone';
+import { Paper} from '@mui/material'
 
 
 
@@ -28,9 +29,30 @@ const Article = () => {
         setLoading(true)
         Promise.all([fetchSpecificArticle(article_id), getArticleReviews(article_id)])
         .then(([{article} , comments ]) => {
-            setArticleComments(comments)
-            setLoading(false)
+            const returnComments = []
+            let counter = 0 
+            comments.forEach((comment) => {
+                getUser(comment.author).then((result) => {
+                        //console.log(result[0].avatar_url, "My result")
+                        // console.log(comment, "Original comment")
+                        comment['avatar_url'] = result[0].avatar_url
+                        // console.log(comment, "After pushing")
+                        returnComments.push(comment)
+                        // counter++
+                        // console.log(returnComments, "growing")
+                        // console.log(counter, comments.length, "this things")
+                        // console.log(returnComments.length, "returnComments.length")
+                        // console.log(comments.length, "comments.length")
+                        if (returnComments.length === comments.length){
+                            console.log('check')
+                            setArticleComments(returnComments)
+                            //setLoading(false)
+                        }
+                })
+            })
+            // setArticleComments(comments)
             setArticleContent(article)
+            setLoading(false)
         })
     }, [article_id])
 
@@ -105,33 +127,43 @@ const Article = () => {
     }
     if (loading) return <p> Loading...</p>
 
+    console.log(articleComments, "article comments new")
 
     return (
         <div>
-            <div>
-                <h1>{articleContent[0].title}</h1>
-                <h3>Date:{articleContent[0].created_at}</h3>
-                <h3>Created by: {articleContent[0].author}</h3>
-                <p>{articleContent[0].body} </p>
-                <Button onClick={() => handleArticleLike()}>👍 {articleContent[0].votes}</Button>
-                {errArticle !== '' ? <p>{errArticle.message}</p>: ''}
+            <div className={'App articleOpened'}>
+                <Paper sx={{backgroundColor: 'primary.article'}} elevation={24}>
+                    <h3 className={'App postedByOpened'}>Created by: {articleContent[0].author}</h3>
+                    <h3 className={'App postedDateOpened'}>{moment(articleContent[0].created_at).startOf().fromNow()}</h3>
+                    <h1>{articleContent[0].title}</h1>
+                    <img src={articleContent[0].article_img_url} alt={articleContent[0].title} className={' App subjectArticlesPictureOpened'}></img>
+                    <p className={'App subjectArticleBodyOpened'}>{articleContent[0].body} </p>
+                    <Button onClick={() => handleArticleLike()}>👍 {articleContent[0].votes}</Button>
+                    {errArticle !== '' ? <p>{errArticle.message}</p>: ''}
+                </Paper>
             </div>
-            <h2>Comments</h2>
-            <CommentAdder setArticleComments={setArticleComments} article_id={article_id}/>
-            <ul>
-                {articleComments.map((comment) => {
-                    return (
-                        <li key={comment.comment_id}>
-                            <h5>{comment.author}</h5>
-                            <p>{moment(comment.created_at).startOf().fromNow()}</p>
-                            <p>{comment.body}</p>
-                            <Button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</Button>
-                            {currentUser === 'null' ? null : comment.author === currentUser[0].username ? <Button onClick={()=> handleDeleteComment(comment.comment_id)}>delete</Button> : null}
-                            {errComment !== '' ? <p>{errComment.message}</p>: ''}
-                        </li>
-                    )
-                })}
-            </ul>
+            <div className={'App articleOpened'}>
+                <Paper sx={{backgroundColor: 'primary.article'}} elevation={24}>
+                    <h2>Comments</h2>
+                    <CommentAdder setArticleComments={setArticleComments} article_id={article_id}/>
+                    <ul>
+                        {articleComments.map((comment) => {
+                            return (
+                                <li key={comment.comment_id}>
+                                    {/* <script>console.log(comment)</script> */}
+                                    <img src={comment.avatar_url}></img>
+                                    <h5>{comment.author}</h5>
+                                    <p>{moment(comment.created_at).startOf().fromNow()}</p>
+                                    <p>{comment.body}</p>
+                                    <Button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</Button>
+                                    {currentUser === 'null' ? null : comment.author === currentUser[0].username ? <Button onClick={()=> handleDeleteComment(comment.comment_id)}>delete</Button> : null}
+                                    {errComment !== '' ? <p>{errComment.message}</p>: ''}
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </Paper>
+            </div>
         </div>
     )
 }

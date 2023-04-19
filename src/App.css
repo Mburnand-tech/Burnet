@@ -47,8 +47,7 @@
   position: static;
   margin: auto;
   clear: Inline-end;
-  padding: 0.5%
-
+  padding: 0.5%;
 }
 .logo{
   float: left;
@@ -81,6 +80,7 @@
 
 .navBarElement{
   padding: 8px;
+  text-decoration: none
 }
 
 
@@ -108,7 +108,7 @@
 }
 
 .subjectArticles{
-  color: blue;
+  color: black;
   margin-top: 20px;
   padding-bottom: 0%;
   margin-bottom: 50px; 
@@ -126,20 +126,31 @@
   height: 150px;
   width: 30%;
   float: right;
+  margin-top: 20px;
 }
 .subjectArticlesBody {
   font-size: 12px;
   -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
   height: 100px;
+  font-size: small;
+}
+
+.topic{
+  display: inline-block;
+  margin: 0%;
+  margin-right: 10px;
 }
 
 .postedDate{
   margin: 0%;
+  display: inline-block;
 }
 
 .postedBy{
+  display: inline-block;
   /* width:50%; */
-  margin: 0% !important;
+  margin: 0%;
+  margin-right: 10px;
   border: 0%;
   /* float: right; */
   clear: right;
@@ -147,15 +158,26 @@
 }
 
 .articleComments{
-  margin: 0%;
+  display: inline-block;
+  margin-right: 5%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  
 }
 
 .articleLikes{
   margin: 0%;
+  display: inline-block;
 }
 
 .articleTitle{
-  margin: 0px
+  margin: 0px;
+  font-size: medium;
+  text-decoration: none
+}
+
+.articleLink{
+  text-decoration: none
 }
 
 /* FILTER BAR  */
@@ -174,5 +196,45 @@
   margin-left: 10%;
 }
 
+
+/* OPENED ARTICLE */
+
+.articleOpened{
+  margin: 5%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.postedDateOpened{
+  margin: 0%;
+  display: inline-block;
+}
+
+.postedByOpened{
+  display: inline-block;
+  /* width:50%; */
+  margin: 0%;
+  margin-right: 10px;
+  border: 0%;
+  /* float: right; */
+  clear: right;
+  box-sizing: border-box;
+}
+
+.subjectArticlesPictureOpened{
+  height: 90%;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 20%; */
+  /* margin-top: 20px; */
+}
+
+.subjectArticleBodyOpened{
+  margin: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 
