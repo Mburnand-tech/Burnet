@@ -23,11 +23,20 @@ function App() {
     components: {
       primary:{
         main: red[500],
+        article: '#f2dfce'
+      }
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#f2dfce'
+        }
       }
     },
     palette: {
       primary: {
         main: green[500],
+        article: '#f2dfce', 
       },
     },
   });

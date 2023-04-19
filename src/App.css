@@ -28,6 +28,8 @@
 /* THEME */
 .light{
   background-color: #f2dfce;
+  background: #f2dfce;
+  color: #f2dfce;
 }
 .dark{
   background-color: #0D7680;
@@ -109,18 +111,16 @@
 
 .subjectArticles{
   color: blue;
-  padding: auto; 
   margin-top: 20px;
   padding-bottom: 0%;
   margin-bottom: 50px; 
-  padding-left: 0%;
-  outline: auto;
   /* height: 55%;*/
   right: 0px;
   left: 0%;
   width: 100%;
   height: 100%;
   /* box-sizing: border-box; */
+  /* background-image: 0; */
 
   
 }
@@ -132,7 +132,7 @@
 .subjectArticlesBody {
   font-size: 12px;
   -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
-  height: 40%;
+  height: 100px;
 }
 
 .postedDate{
