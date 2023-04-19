@@ -1,12 +1,11 @@
 import { useEffect , useState } from 'react'
 import { useSearchParams , useParams} from 'react-router-dom' 
 import { fetchAllArticles } from './utils'
-import { Paper, Box } from '@mui/material'
+import { Paper} from '@mui/material'
 
 import './App.css'
 
 import RenderArticle from './RenderArticleContent'
-import { makeStyles } from '@mui/material'
 
 
 // const useStyles = makeStyles((theme) => ({

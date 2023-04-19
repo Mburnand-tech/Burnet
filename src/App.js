@@ -35,7 +35,7 @@ function App() {
     },
     palette: {
       primary: {
-        main: green[500],
+        main: green[500], 
         article: '#f2dfce', 
       },
     },

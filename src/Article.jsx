@@ -8,7 +8,6 @@ import moment from 'moment-timezone';
 
 
 
-
 const Article = () => {
 
     const  {currentUser}  = useContext(UserContext)
@@ -24,7 +23,6 @@ const Article = () => {
 
 
     //----------- Weird how it only works for true in this doc but false in the Content doc
-
 
     useEffect(() => {
         setLoading(true)
@@ -105,9 +103,9 @@ const Article = () => {
 
         deleteComment(comment_id)
     }
-        
-
     if (loading) return <p> Loading...</p>
+
+
     return (
         <div>
             <div>
@@ -125,8 +123,7 @@ const Article = () => {
                     return (
                         <li key={comment.comment_id}>
                             <h5>{comment.author}</h5>
-                            <p>{comment.created_at}</p>
-                            {/* <p>{moment(comment.created_at, "YYYYMMDD").startOf('hour').fromNow()}</p> */}
+                            <p>{moment(comment.created_at).startOf().fromNow()}</p>
                             <p>{comment.body}</p>
                             <Button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</Button>
                             {currentUser === 'null' ? null : comment.author === currentUser[0].username ? <Button onClick={()=> handleDeleteComment(comment.comment_id)}>delete</Button> : null}
