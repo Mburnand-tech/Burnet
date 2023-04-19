@@ -45,7 +45,7 @@ const AllArticles = () => {
         <ul className={'App subjectArticlesList'}>
         {
             articles.map((article) => {
-                return <li key={article.article_id}><Paper sx={{backgroundColor: 'primary.article', '&:hover': {
+                return <li key={article.article_id}><Paper className={'App subjectArticles'} sx={{backgroundColor: 'primary.article', border: '1px solid black', '&:hover': {
                     border: '1px solid grey',
                     backgroundColor: 'primary.article',
                    }}} elevation={24}><RenderArticle article={article}/></Paper></li>

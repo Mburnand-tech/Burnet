@@ -1,6 +1,7 @@
 import { useEffect , useState} from 'react'
 import { fetchSpecificArticle } from './utils'
 import { Link } from 'react-router-dom' 
+import moment from 'moment-timezone';
 
 import './App.css'
 
@@ -20,8 +21,8 @@ const RenderArticle = ({article}) => {
 
     return (
         <Link to={`/articles/${article.article_id}`}>
-            <div className={'App subjectArticles'}>
-                <p className={'App postedDate'}> Posted {article.created_at}</p>
+            <div >
+                <p className={'App postedDate'}> Posted {moment(article.created_at, "YYYYMMDD").startOf('hour').fromNow()}</p>
                 <h4 className={'App postedBy'}> Posted by {article.author}</h4>
                 <img src={article.article_img_url} alt={article.title} className={' App subjectArticlesPicture'}></img>
                 <h3 className={'App articleTitle'}> {article.title}</h3>
