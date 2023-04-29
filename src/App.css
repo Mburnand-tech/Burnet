@@ -64,7 +64,7 @@
   margin: auto;
   clear: Inline-end;
   padding: 0.5%;
-  height: 100px
+  height: 110px
 }
 .logo{
   float: left;
@@ -74,10 +74,15 @@
   width: 40%; */
 }
 
+.signInForm{
+  /* background-color: black; */
+  top: 20%;
+  padding-top: 20%;
+}
 
 .signIn{
   float: right;
-  /* top: 5px; */
+  top: 50px;
   right: 10px;
   /* margin-top: 2%; */
   margin-left: 20px;
@@ -96,6 +101,7 @@
   /* float: left; */
   /* right: 5%; */
   /* margin-right: 10%; */
+  height: 50px;
   
   
 }
@@ -124,6 +130,9 @@
     display: none;
   }
   .signIn {
+    display: none;
+  }
+  .signInForm{
     display: none;
   }
 }

@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext , useState} from 'react'
 import { UserContext } from './contexts/UserContext'
 import { Avatar, Tooltip } from '@mui/material'
 
@@ -7,15 +7,18 @@ import './App.css';
 const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
     
     const  {currentUser}  = useContext(UserContext)
+    const [showSignIn, setShowSignIn] = useState(true)
     
 
     const handleSignOut = () => {
         console.log("Lets sign you out")
         setIsLoggedIn(false)
+        setShowSignIn(true)
     }
 
     const handleLogin = () => {
         console.log("We are going to log you in")
+        setShowSignIn(false)
         setLogInPortal(true)
     }
     if (isLoggedIn=== true){
@@ -34,7 +37,9 @@ const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
     if (isLoggedIn === false){
         return (
             <div>
-                <button onClick={handleLogin} >Sign in</button>
+                { showSignIn === true ?
+                <button onClick={handleLogin} >Sign in</button> : null
+        }
             </div>
         )
     }

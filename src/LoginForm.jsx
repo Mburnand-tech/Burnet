@@ -4,6 +4,8 @@ import { useContext } from 'react'
 import { getUser } from './utils'
 import { UserContext } from './contexts/UserContext'
 
+import './App.css';
+
 const LoginForm = ({setIsLoggedIn, logInPortal, setLogInPortal}) => {
     const [ userNameEntry, setUserNameEntry ] = useState('')
     const  {setCurrentUser}  = useContext(UserContext)
@@ -29,7 +31,7 @@ const LoginForm = ({setIsLoggedIn, logInPortal, setLogInPortal}) => {
             {logInPortal?
             <div >
                 <div>
-                    <form onSubmit={logInUser}>
+                    <form onSubmit={logInUser} className={'App signInForm'}>
                         <label>Username:</label><br></br>
                         <input
                             value={userNameEntry}
