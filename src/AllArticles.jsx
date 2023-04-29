@@ -1,7 +1,7 @@
 import { useEffect , useState } from 'react'
 import { useSearchParams , useParams} from 'react-router-dom' 
 import { fetchAllArticles } from './utils'
-import { Paper} from '@mui/material'
+import { Paper, CircularProgress} from '@mui/material'
 
 import './App.css'
 
@@ -29,16 +29,16 @@ const AllArticles = () => {
         })
     }, [searchParams, setSearchParams, topic])
 
-    if (loading) return <p className={`App loadingPage`}> Loading...</p>
+    if (loading) return <p className={`App loadingPage`}>  <CircularProgress /></p>
 
     return (
         <ul className={'App subjectArticlesList'}>
         {
             articles.map((article) => {
-                return <li key={article.article_id}><Paper className={'App subjectArticles'} sx={{backgroundColor: 'primary.article', border: '1px solid black', '&:hover': {
+                return <li key={article.article_id} className={'App subjectArticlesListIndv'}><Paper className={'App subjectArticles'} sx={{backgroundColor: 'primary.article', border: '1px solid black', '&:hover': {
                     border: '1px solid grey',
                     backgroundColor: 'primary.article',
-                   }}} elevation={24}><RenderArticle article={article}/></Paper></li>
+                   }}} elevation={4}><RenderArticle article={article}/></Paper></li>
                 // return <li key={article.article_id}><Box sx={{backgroundColor: 'primary.article', }} elevation={24}><RenderArticle article={article}/></Box></li>
             })
         }

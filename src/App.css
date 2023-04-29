@@ -1,7 +1,18 @@
-.container {
-  background-color: rgb(44, 0, 95);
+.flex-container {
   width: 100%;
   height: 100%;
+  /* -ms-box-orient: horizontal; */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  /* background-color: blue; */
+  flex-flow: row wrap;
+  /* flex-direction: row;
+  /* -webkit-flex-wrap: wrap;*/
+  /* flex-wrap: wrap;   */
 }
 
 /* LOG IN TRANSITION */
@@ -32,11 +43,15 @@
 .dark{
   background-color: #0D7680;
 }
-
+.dark.header{
+  background-color: aquamarine;
+}
 
 
 .loadingPage{
   height: 5000px; 
+  margin-left: 50%;
+  margin-top: 150px;
 }
 
 
@@ -48,6 +63,7 @@
   margin: auto;
   clear: Inline-end;
   padding: 0.5%;
+  height: 100px
 }
 .logo{
   float: left;
@@ -64,6 +80,14 @@
   margin-top: 3%;
   margin-right: 3%;
   width: 59px;
+  display: inline-block;
+
+}
+
+.signedInElements{
+  display: inline-block;
+  float: left
+
 }
 
 .themeButton{
@@ -73,7 +97,7 @@
 }
 
 .navBar{
-  bottom: 40px;
+  /* bottom: 40px; */
   margin: 2%;
   padding: 1.5%;
 }
@@ -85,26 +109,117 @@
 
 
 /* HOME PAGE */
-.homeArticles {
-  color: red;
+/* .homeArticlesList{
+  list-style-type: none;  
+  height: 20%;
+  width: 20%; 
+  
+} */
+
+.homeArticlesList {
+  list-style-type: none;  
+  /* color: red; */
   padding: auto;
-  margin: auto;
-  outline: auto;
-  height: 55%;
-  width: 80%;
+  /* margin: 5%; */
+  height: 300px;
+  width: 250px;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+  /* margin-top: 5%;
+  margin-bottom: 5%; */
 }
-.homeArticlesPicture {
-  height: 25%;
-  width: 25%;
+
+.homeArticleFirstList{
+  list-style-type: none;  
+  /* color: green; */
+  padding: 0;
+  /* margin: 2.5%; */
+  margin-bottom: 2.5%;
+  margin-left: 2.5%;
+  /* margin-right: 2.5%; */
+  /* padding-bottom: 2.5%; */
+
+  height: 300px;
+  width: 650px;
+  /* flex: 0.5; */
+}
+
+.homeArticleSecondThirdList{
+  list-style-type: none;  
+  /* color: yellow; */
+  padding: auto;
+  /* margin: 5%; */
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+
+  height: 300px;
+  width: 425px;
+  right: 500px;
+  /* font-size: x-small; */
+}
+
+.homeArticleContent{
+  margin: 0
+}
+
+
+.homeArticlesPictureFirst {
+  height: auto;
+  width: 60%;
   float: right;
 }
 
+.homeArticlesPictureSecond {
+  height: auto;
+  width: 90%;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* float: right; */
+}
+
+.homeArticlesPictureRest {
+  height: 100%;
+  width: 100%;
+  /* float: right; */
+}
+
+.homeArticlesTitle{
+  display: inline-block;
+  font-size: large;
+}
+
+.homeArticlesCreatedAt{
+  display: inline-block;
+  font-size: small;
+}
+
+.homeArticlesPostedBy{
+  display: inline-block;
+  font-size: small;
+}
+
+.homeArticlesComments{
+  display: inline-block;
+  font-size: small;
+}
+
+.homeArticlesLikes{
+  display: inline-block;
+  font-size: small;
+}
 
 /* SUBJECT PAGE */
 .subjectArticlesList{
   margin-left: 130px;
   margin-right: 10%;
   list-style-type: none;
+}
+
+.subjectArticlesListIndv{
+  list-style-type: none;
+  height: 215px;
 }
 
 .subjectArticles{
@@ -123,10 +238,11 @@
   
 }
 .subjectArticlesPicture {
-  height: 150px;
-  width: 30%;
+  height: 100%;
+  max-height: 100%;
+  width: 29.5%;
   float: right;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .subjectArticlesBody {
   font-size: 12px;
@@ -235,6 +351,28 @@
   margin: 2%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.commentsList{
+  /* margin-left: 130px; */
+  margin-right: 10%; 
+  list-style-type: none;
+}
+
+.commentAvatar{
+  display: inline-block;
+}
+
+.commentPostedByOpened{
+  display: inline-block;
+}
+
+.commentDateOpened{
+  display: inline-block;
+}
+
+.commentBodyOpened{
+  display: inline-block;
 }
 
 

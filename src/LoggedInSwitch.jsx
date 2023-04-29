@@ -20,7 +20,7 @@ const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
     }
     if (isLoggedIn=== true){
         return (
-            <div>
+            <div className={'App signedInElements'}>
                 <button onClick={handleSignOut} className={"App signIn"}>Log out</button>
                 <Avatar src={currentUser[0].avatar_url} alt='profile'  sx={{ width: 44, height: 44 }} variant="rounded"/>
                 <h5>{currentUser[0].name}</h5>

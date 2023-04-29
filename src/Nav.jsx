@@ -18,6 +18,7 @@ const Nav = () => {
             <Link className={'App navBarElement'} to='/category/coding'> Technology</Link>
             <Link className={'App navBarElement'} to='/category/football' > Sports</Link>
             <Link className={'App navBarElement'} to='/category/cooking' > LifeStyle</Link>
+            <Link className={'App navBarElement'} to='/about' > About</Link>
             <Switch className={'App themeButton'} onChange={() => {changeTheme()}}></Switch>
         </nav>
     )

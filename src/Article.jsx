@@ -5,7 +5,7 @@ import CommentAdder from './CommentAdder'
 import { Button } from '@mui/material';
 import { UserContext } from './contexts/UserContext'
 import moment from 'moment-timezone';
-import { Paper} from '@mui/material'
+import { Paper, Avatar, CircularProgress} from '@mui/material'
 
 
 
@@ -33,26 +33,17 @@ const Article = () => {
             let counter = 0 
             comments.forEach((comment) => {
                 getUser(comment.author).then((result) => {
-                        //console.log(result[0].avatar_url, "My result")
-                        // console.log(comment, "Original comment")
                         comment['avatar_url'] = result[0].avatar_url
-                        // console.log(comment, "After pushing")
                         returnComments.push(comment)
-                        // counter++
-                        // console.log(returnComments, "growing")
-                        // console.log(counter, comments.length, "this things")
-                        // console.log(returnComments.length, "returnComments.length")
-                        // console.log(comments.length, "comments.length")
                         if (returnComments.length === comments.length){
                             console.log('check')
                             setArticleComments(returnComments)
-                            //setLoading(false)
+                            setLoading(false)
                         }
                 })
             })
             // setArticleComments(comments)
             setArticleContent(article)
-            setLoading(false)
         })
     }, [article_id])
 
@@ -125,9 +116,7 @@ const Article = () => {
 
         deleteComment(comment_id)
     }
-    if (loading) return <p> Loading...</p>
-
-    console.log(articleComments, "article comments new")
+    if (loading) return <p className={'App loadingPage'}> <CircularProgress /></p>
 
     return (
         <div>
@@ -146,14 +135,14 @@ const Article = () => {
                 <Paper sx={{backgroundColor: 'primary.article'}} elevation={24}>
                     <h2>Comments</h2>
                     <CommentAdder setArticleComments={setArticleComments} article_id={article_id}/>
-                    <ul>
+                    <ul className={'App commentsList'}>
                         {articleComments.map((comment) => {
                             return (
                                 <li key={comment.comment_id}>
                                     {/* <script>console.log(comment)</script> */}
-                                    <img src={comment.avatar_url}></img>
-                                    <h5>{comment.author}</h5>
-                                    <p>{moment(comment.created_at).startOf().fromNow()}</p>
+                                    <div className={'App commentAvatar'}><Avatar src={comment.avatar_url}></Avatar></div>
+                                    <h5 className={'App commentPostedByOpened'}>{comment.author}</h5>
+                                    <p className={'App commentDateOpened'}>{moment(comment.created_at).startOf().fromNow()}</p>
                                     <p>{comment.body}</p>
                                     <Button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</Button>
                                     {currentUser === 'null' ? null : comment.author === currentUser[0].username ? <Button onClick={()=> handleDeleteComment(comment.comment_id)}>delete</Button> : null}

@@ -20,7 +20,6 @@ const RenderArticle = ({article}) => {
     return (
         <Link className={'app articleLink'} to={`/articles/${article.article_id}`}>
             <div >
-
                 <h4 className={'App topic'}>{article.topic}</h4>
                 <h4 className={'App postedBy'}> Posted by {article.author}</h4>
                 <p className={'App postedDate'}>{moment(article.created_at, "YYYYMMDD").startOf('hour').fromNow()}</p>

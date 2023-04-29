@@ -1,6 +1,8 @@
 import { useEffect , useState } from 'react'
 import { fetchAllArticles } from './utils'
-import styles from "./App.css"
+import "./App.css"
+import { CircularProgress, Paper} from '@mui/material'
+
 
 import RenderArticle from './RenderArticle'
 
@@ -18,13 +20,16 @@ const Home = () => {
     }, [])
     // Why is if I type 'articles in array above it creates an infinite loop
 
-    if (loading) return <p className={`App loadingPage`}> Loading...</p>
-
+    if (loading) return <p className={'App loadingPage'}> <CircularProgress /></p>
     return (
-        <ul>
+        <ul  className={'App flex-container'}>
             {
-                articles.map((article) => {
-                    return <li key={article.article_id} className={styles.article}><RenderArticle article={article}/></li>
+                articles.map((article, index) => {
+                    return <li key={article.article_id} className={index === 0 ? 'App homeArticleFirstList' : index === 1 ? 'App homeArticleSecondThirdList' : `App homeArticlesList`}>
+                        <Paper className={'App subjectArticles'} sx={{backgroundColor: 'primary.article', border: '1px solid black', '&:hover': {
+                    border: '1px solid grey',
+                    backgroundColor: 'primary.article',
+                   }}} elevation={24}><RenderArticle position={index} article={article}/></Paper></li>
                 })
             }
         </ul>
