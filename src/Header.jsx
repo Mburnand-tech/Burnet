@@ -1,13 +1,22 @@
 import { Link } from 'react-router-dom' 
 import { Avatar } from '@mui/material';
 import './App.css';
+// import { useContext } from 'react'
+// import { Switch } from '@mui/material'
+// import { ThemeContext } from './contexts/themeContext'
 
 import Nav from './Nav'
-import User from './User'
+
 
 import logo from './Pictures/bf2a7848f98e424a949522f4e61cb332.jpg'
 
 const Header = ({isLoggedIn, setIsLoggedIn}) => {
+
+    // const  { currentTheme, setCurrentTheme }  = useContext(ThemeContext)
+
+    // const changeTheme = () => {
+    //     currentTheme ==='light' ? setCurrentTheme('dark') : setCurrentTheme('light')
+    // }
 
 
  return (
@@ -20,8 +29,10 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
                     sx={{ width: 70, height: 70 }}
                     />
             </Link>
-            <User isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
-            <Nav/>
+            <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
+            {/* <Switch className={'App themeButton'} onChange={() => {changeTheme()}}></Switch> */}
+            
+            
         </nav>
     </header>
 

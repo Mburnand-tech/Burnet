@@ -55,6 +55,7 @@
 }
 
 
+
 /* HEADER */
 .header {
   outline: auto;
@@ -73,33 +74,69 @@
   width: 40%; */
 }
 
+
 .signIn{
   float: right;
-  top: 5px;
-  right: 50px;
-  margin-top: 3%;
-  margin-right: 3%;
+  /* top: 5px; */
+  right: 10px;
+  /* margin-top: 2%; */
+  margin-left: 20px;
   width: 59px;
   display: inline-block;
 
 }
 
-.signedInElements{
-  display: inline-block;
-  float: left
-
+.logOut{
+  float: top
 }
+
+.signedInElements{
+  /* display: inline-block; */
+  /* display: block; */
+  /* float: left; */
+  /* right: 5%; */
+  /* margin-right: 10%; */
+  
+  
+}
+
+.loggedInAvatar{
+  outline: auto;
+  color: black;
+  right: 75px;
+  top: -40px
+}
+
 
 .themeButton{
   float: right;
-  top: -25px;
-  right: -80px
+  top: -8px;
+  /* right:-20% */
+  right:-175px;
+  /* right: -30%; */
 }
+
+@media (max-width: 840px) {
+  .signedInElements {
+    display: none;
+  }
+  .themeButton{
+    display: none;
+  }
+  .signIn {
+    display: none;
+  }
+}
+
 
 .navBar{
   /* bottom: 40px; */
-  margin: 2%;
+  /* margin: 2%; */
+  margin-left: 2%;
+  margin-top: 2%;
   padding: 1.5%;
+  padding-right: 10.5%;
+  /* margin-right: 5.5%; */
 }
 
 .navBarElement{
@@ -109,6 +146,8 @@
 
 
 /* HOME PAGE */
+
+
 /* .homeArticlesList{
   list-style-type: none;  
   height: 20%;

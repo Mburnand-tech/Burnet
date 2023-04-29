@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { UserContext } from './contexts/UserContext'
-import { Avatar } from '@mui/material'
+import { Avatar, Tooltip } from '@mui/material'
 
 import './App.css';
 
@@ -21,17 +21,20 @@ const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
     if (isLoggedIn=== true){
         return (
             <div className={'App signedInElements'}>
-                <button onClick={handleSignOut} className={"App signIn"}>Log out</button>
-                <Avatar src={currentUser[0].avatar_url} alt='profile'  sx={{ width: 44, height: 44 }} variant="rounded"/>
-                <h5>{currentUser[0].name}</h5>
-                <p> User : {currentUser[0].username}</p>
+                <button onClick={handleSignOut} className={'App logOut'} >Log out</button>
+                <Tooltip title={currentUser[0].name }>
+                    <Avatar src={currentUser[0].avatar_url} alt='profile'  sx={{ width: 44, height: 44 }} variant="circular" className={'App loggedInAvatar'}/>
+                </Tooltip>
+                {/* <button onClick={handleSignOut} className={'App logOut'} >Log out</button> */}
+                {/* <h5>{currentUser[0].name}</h5>
+                <p> User : {currentUser[0].username}</p> */}
             </div>
         )
     }
     if (isLoggedIn === false){
         return (
-            <div className={"App signIn"}>
-                <button onClick={handleLogin} className={"App signIn"}>Sign in</button>
+            <div>
+                <button onClick={handleLogin} >Sign in</button>
             </div>
         )
     }

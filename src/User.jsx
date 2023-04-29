@@ -10,8 +10,9 @@ const User = ({isLoggedIn, setIsLoggedIn}) => {
 
     return (
         <div className={'App signIn'}>
-            <LoggedInSwitch isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} setLogInPortal={setLogInPortal}/>
             <LoginForm setIsLoggedIn={setIsLoggedIn} logInPortal={logInPortal} setLogInPortal={setLogInPortal} />
+            <LoggedInSwitch isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} setLogInPortal={setLogInPortal}/>
+            
         </div>
     )
 }
