@@ -51,7 +51,7 @@ function App() {
                 <Route path="/category/:topic" element={<Content/>}/>
                 <Route path="/articles/:article_id" element={<Article/>}/>
                 <Route path="/about" element={<About/>}/>
-        </Routes>     
+        </Routes>  
       </ThemeProvider>
     </div>
   );

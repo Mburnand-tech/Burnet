@@ -1,7 +1,9 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom' 
-import { Switch } from '@mui/material'
+// import {  Menu } from '@mui/base'
 import { ThemeContext } from './contexts/themeContext'
+
+import MaterialUISwitch from './MaterialUISwitch'
 
 import User from './User'
 
@@ -17,12 +19,14 @@ const Nav = ({isLoggedIn, setIsLoggedIn}) => {
 
     return (
         <nav className={'App navBar'} >
-            <Link className={'App navBarElement'} to='/category/coding'> Technology</Link>
-            <Link className={'App navBarElement'} to='/category/football' > Sports</Link>
-            <Link className={'App navBarElement'} to='/category/cooking' > LifeStyle</Link>
-            <Link className={'App navBarElement'} to='/about' > About</Link>
-            <User isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
-            <Switch className={'App themeButton'} onChange={() => {changeTheme()}}></Switch>
+            
+                <Link className={'App navBarElement'} to='/category/coding'> Technology</Link>
+                <Link className={'App navBarElement'} to='/category/football' > Sports</Link>
+                <Link className={'App navBarElement'} to='/category/cooking' > LifeStyle</Link>
+                <Link className={'App navBarElement'} to='/about' > About</Link>
+                <User isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
+                <MaterialUISwitch className={'App themeButton'} onChange={() => {changeTheme()}}></MaterialUISwitch>
+            
         </nav>
     )
 }

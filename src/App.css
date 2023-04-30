@@ -169,12 +169,14 @@
   /* color: red; */
   padding: auto;
   /* margin: 5%; */
-  height: 300px;
+  height: 325px;
   width: 250px;
   margin-left: 2.5%;
   margin-bottom: 2.5%;
   /* margin-top: 5%;
   margin-bottom: 5%; */
+  position: relative;
+
 }
 
 .homeArticleFirstList{
@@ -207,7 +209,7 @@
 }
 
 .homeArticleContent{
-  margin: 0
+  margin: 0;
 }
 
 
@@ -236,26 +238,63 @@
 .homeArticlesTitle{
   display: inline-block;
   font-size: large;
+  margin:0%;
+  margin-top:10px;
+  font-weight: 700;
+  margin-left:5px;
+  color: #1f1d1d;
 }
 
 .homeArticlesCreatedAt{
   display: inline-block;
   font-size: small;
+  margin:0%;
+  color: #615c5c;
 }
 
 .homeArticlesPostedBy{
   display: inline-block;
   font-size: small;
+  font-weight: 600;
+  margin:0%;
+  margin-right: 7px;
+  margin-left:5px;
+  color: #1f1d1d;
+}
+
+.homeArticlesPostedBy:hover{
+  text-decoration: underline;
 }
 
 .homeArticlesComments{
   display: inline-block;
   font-size: small;
+  margin:0%;
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  color: #1f1d1d;
+} 
+
+.homeArticlesComments:hover{
+  color: #b5b0b0;
 }
 
 .homeArticlesLikes{
   display: inline-block;
   font-size: small;
+  margin:0%;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  bottom: -10px;
+  color: #1f1d1d;
+  /* position: absolute;
+  bottom: 0%; */
+}
+
+.homeArticlesLikes:hover{
+  color: #b5b0b0;
 }
 
 /* SUBJECT PAGE */
@@ -263,6 +302,7 @@
   margin-left: 130px;
   margin-right: 10%;
   list-style-type: none;
+  
 }
 
 .subjectArticlesListIndv{
@@ -321,6 +361,10 @@
   box-sizing: border-box;
 }
 
+.postedBy:hover{
+  text-decoration: underline;
+}
+
 .articleComments{
   display: inline-block;
   margin-right: 5%;
@@ -329,9 +373,17 @@
   
 }
 
+.articleComments:hover{
+  color: #b5b0b0;
+}
+
 .articleLikes{
   margin: 0%;
   display: inline-block;
+}
+
+.articleLikes:hover{
+    color: #b5b0b0;
 }
 
 .articleTitle{
