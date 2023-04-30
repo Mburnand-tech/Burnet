@@ -8,6 +8,7 @@ import Home from './Home'
 import Content from './Content';
 import Article from './Article';
 import About from './AboutPage';
+import Footer from './Footer'
 
 
 
@@ -51,7 +52,8 @@ function App() {
                 <Route path="/category/:topic" element={<Content/>}/>
                 <Route path="/articles/:article_id" element={<Article/>}/>
                 <Route path="/about" element={<About/>}/>
-        </Routes>  
+        </Routes>
+        <Footer/>
       </ThemeProvider>
     </div>
   );
