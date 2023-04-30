@@ -13,13 +13,23 @@ const Footer = () => {
                 <h1 className={'App contactDetails'}>
                     Contact Details
                     <ul>
-                    <li>Linedin:</li>
-                    <li>Link to CV:</li>
-                    <li>Email:</li>
-                    <li>Telephone number:</li>
+                    <li className='App contactDetailsElements'>Name: Matthew Burnand</li>
+                    <li className='App contactDetailsElements'>Linkedin: https://www.linkedin.com/in/m-burnand/</li>
+                    <li className='App contactDetailsElements'>Email: mburnand@protonmail.com</li>
+                    <li className='App contactDetailsElements'>Telephone number: +44 7720 271162</li>
+                    <li className='App contactDetailsElements'>Open to work: Anywhere in the world</li>
                     </ul>
                 </h1>
-
+                <ul className='App footerFakeLinksList'>
+                    <il className={'App footerFakeLinks'}>Terms of Use</il>
+                    <il className={'App footerFakeLinks'}>About the Burnnet</il>
+                    <il className={'App footerFakeLinks'}>Privacy Policy</il>
+                    <il className={'App footerFakeLinks'}>Cookies</il>
+                    <il className={'App footerFakeLinks'}>Accessibility Help</il>
+                    <il className={'App footerFakeLinks'}>Parental Guidance</il>
+                    <il className={'App footerFakeLinks'}>Do not share or sell my info</il>
+                </ul>
+                <p1 className='App footerDiscloser'>Copyright © 2023 Burnnet. Burnnet is not responsible for the content of external sites. Read about our approach to external linking.</p1>
         </div>
     )
 }
