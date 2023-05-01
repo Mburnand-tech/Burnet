@@ -26,7 +26,8 @@ const Home = () => {
             <ul  className={'App flex-container'}>
                 {
                     articles.map((article, index) => {
-                        return <li key={article.article_id} className={index === 0 ? 'App homeArticleFirstList' : index === 1 ? 'App homeArticleSecondThirdList' : `App homeArticlesList`}>
+                        // return <li key={article.article_id} className={index === 0 ? 'App homeArticleFirstList' : index === 1 ? 'App homeArticleSecondThirdList' : `App homeArticlesList`}>
+                        return <li key={article.article_id} className={index === 0 ? 'App homeArticleFirstList' : `App homeArticlesList`}>
                             <Paper className={'App subjectArticles'} sx={{backgroundColor: 'primary.article', border: '1px solid black', '&:hover': {
                         border: '1px solid grey',
                         backgroundColor: 'primary.article',
