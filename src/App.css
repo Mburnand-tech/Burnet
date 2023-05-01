@@ -187,7 +187,6 @@
   margin-left: 2.5%;
   /* margin-right: 2.5%; */
   /* padding-bottom: 2.5%; */
-
   height: 325px;
   width: 815px;
   /* flex: 0.5; */
@@ -254,6 +253,10 @@
   font-weight: 700;
   margin-left:5px;
   color: #1f1d1d;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .homeArticlesCreatedAt{
@@ -383,18 +386,29 @@
   font-size: 12px;
   -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
   height: 100px;
+  margin-bottom: 0%;
+  margin-top: 2px;
+  height: 110px;
   font-size: small;
+  color: #1f1d1d;
+  /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif; */
 }
 
 .topic{
   display: inline-block;
   margin: 0%;
   margin-right: 10px;
+  font-weight: 700;
+  color: #1f1d1d;
+  /* color: #615c5c; */
 }
 
 .postedDate{
   margin: 0%;
   display: inline-block;
+  color: #1f1d1d;
+  font-weight: 400;
+  font-size: small;
 }
 
 .postedBy{
@@ -405,7 +419,10 @@
   border: 0%;
   /* float: right; */
   clear: right;
+  font-weight: 600;
   box-sizing: border-box;
+  font-size: small;
+  color: #1f1d1d;
 }
 
 .postedBy:hover{
@@ -414,10 +431,18 @@
 
 .articleComments{
   display: inline-block;
-  margin-right: 5%;
-  margin-top: 0%;
+  margin-right: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
   margin-bottom: 0%;
-  
+  font-size: small;
+  position: relative;
+  float:left;
+  /* top: 10px; */
+  bottom: 0px;
+  padding-bottom: 0%;
+  /* left: 20px; */
+  color: #1f1d1d;
 }
 
 .articleComments:hover{
@@ -426,7 +451,10 @@
 
 .articleLikes{
   margin: 0%;
+  margin-top: 10px;
   display: inline-block;
+  color: #1f1d1d;
+  font-size: small;
 }
 
 .articleLikes:hover{
@@ -434,9 +462,22 @@
 }
 
 .articleTitle{
+  /* display: inline-block; */
+  line-height: normal;
   margin: 0px;
+  /* height: 40px; */
+  text-overflow: ellipsis-word;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  position: relative;
   font-size: medium;
-  text-decoration: none
+  text-decoration: none;
+  color: #1f1d1d;
+  font-size: large;
+  /* margin-top: 5px; */
+  margin: auto
+
 }
 
 .articleLink{
@@ -549,7 +590,7 @@
   color: #000;
   float: left;
   margin-left: 15%;
-  margin-top: 10px;
+  margin-top: 15px;
 
 }
 
@@ -563,12 +604,13 @@
 
 .contactDetailsElements{
   list-style-type: none;
+  font-weight: 400;
 }
 
 .footerFakeLinksList{
   border-top: 3px solid rgb(80, 80, 78);
   margin: auto;
-  width:1200px;
+  width:1000px;
   text-align: center;
   padding-top: 40px;
   margin-top: 40px;
