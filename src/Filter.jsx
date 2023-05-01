@@ -23,7 +23,8 @@ const Filter = () => {
 
 //className='checkbox-dropdown'
  return (
-        <FormControl className={'App filterBar'} >
+    <div className={'App filterBar'}>
+        <FormControl>
             <FormLabel className={' App filterBarButtons'}>Filter Results</FormLabel>
             <RadioGroup className={' App filterBarButtons'} defaultValue='date'><label>Sort By:</label>
                 <FormControlLabel className={' App filterBarButtons'} value="date" onChange={setSortBy} control={<Radio />} label='Date'/>
@@ -42,6 +43,7 @@ const Filter = () => {
                />
                <span className={' App filterBarButtons'}>Asc</span>
         </FormControl>
+    </div>
     )
 }
 

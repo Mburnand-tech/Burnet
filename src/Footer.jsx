@@ -17,7 +17,7 @@ const Footer = () => {
                     <li className='App contactDetailsElements'>Linkedin: https://www.linkedin.com/in/m-burnand/</li>
                     <li className='App contactDetailsElements'>Email: mburnand@protonmail.com</li>
                     <li className='App contactDetailsElements'>Telephone number: +44 7720 271162</li>
-                    <li className='App contactDetailsElements'>Open to work: Anywhere in the world</li>
+                    <li className='App contactDetailsElements'>Open to work: Anywhere in the world!</li>
                     </ul>
                 </h1>
                 <ul className='App footerFakeLinksList'>

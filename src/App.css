@@ -58,13 +58,15 @@
 
 /* HEADER */
 .header {
-  outline: auto;
+  /* border-bottom: #000; */
+  border-bottom: 1.5px solid rgb(118, 118, 115);
   color: green;
   position: static;
   margin: auto;
   clear: Inline-end;
   padding: 0.5%;
-  height: 110px
+  height: 110px;
+  background-color: #d7c7ba;
 }
 .logo{
   float: left;
@@ -102,8 +104,6 @@
   /* right: 5%; */
   /* margin-right: 10%; */
   height: 50px;
-  
-  
 }
 
 .loggedInAvatar{
@@ -155,8 +155,14 @@
 }
 
 .navBarElement{
-  padding: 8px;
-  text-decoration: none
+  padding: 15px;
+  text-decoration: none;
+  font-size: large;
+  color: #000;
+}
+
+.navBarElement:hover{
+  color: #827f7f
 }
 
 
@@ -342,8 +348,10 @@ a:link {
 
 /* SUBJECT PAGE */
 .subjectArticlesList{
-  margin-left: 130px;
-  margin-right: 10%;
+  /* margin-left: 160px; */
+  margin-left: 16%;
+  padding-left:30px;
+  margin-right: 3%;
   list-style-type: none;
   
 }
@@ -437,7 +445,7 @@ a:link {
   margin-bottom: 0%;
   font-size: small;
   position: relative;
-  float:left;
+  float: left;
   /* top: 10px; */
   bottom: 0px;
   padding-bottom: 0%;
@@ -494,20 +502,31 @@ a:link {
 
 /* FILTER BAR  */
 .filterBar {
-  color: purple;
-  background-color: whitesmoke;
-  width: 125px;
-  min-width: 13%;
+  width: 150px;
   float: left;
-  top: 40px;
-  left: 10px;
-  position: fixed;  
+  top: 250px;
+  left: 0px;
+  margin-top: 50px;
+  outline: auto;
+  outline-color: rgb(41, 85, 76);
+  outline-width:50in;
+  color:rgb(80, 80, 78);
+  color:rgb(41, 85, 76);
+  background-color: #d7c7ba;
+  /* position: fixed;   */
 }
 
 .filterBarButtons{
-  margin-left: 10%;
+  margin-left: 20px;
+  /* padding-left:10%; */
+  width: 100px;
 }
 
+@media (max-width: 780px) {
+  .filterBar{
+    display: none;
+  }
+}
 
 /* OPENED ARTICLE */
 
@@ -591,7 +610,11 @@ a:link {
   float: left;
   margin-left: 15%;
   margin-top: 15px;
+}
 
+
+.footerElement:hover{
+  text-decoration: underline;
 }
 
 .contactDetails{
@@ -615,6 +638,7 @@ a:link {
   padding-top: 40px;
   margin-top: 40px;
 }
+
 
 .footerDiscloser{
   text-align: center;
