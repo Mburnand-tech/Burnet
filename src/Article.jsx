@@ -143,7 +143,7 @@ const Article = () => {
                                     <div className={'App commentAvatar'}><Avatar src={comment.avatar_url}></Avatar></div>
                                     <h5 className={'App commentPostedByOpened'}>{comment.author}</h5>
                                     <p className={'App commentDateOpened'}>{moment(comment.created_at).startOf().fromNow()}</p>
-                                    <p>{comment.body}</p>
+                                    <p className={'App commentBodyOpened'}>{comment.body}</p>
                                     <Button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</Button>
                                     {currentUser === 'null' ? null : comment.author === currentUser[0].username ? <Button onClick={()=> handleDeleteComment(comment.comment_id)}>delete</Button> : null}
                                     {errComment !== '' ? <p>{errComment.message}</p>: ''}

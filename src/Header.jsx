@@ -22,8 +22,8 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
                     src={logo}
                     sx={{ width: 70, height: 70 }}
                     />
-            </Link>
             <h1 className={'App headerTitle'}>Burnet</h1>
+            </Link>
             <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>          
 
         </nav>
