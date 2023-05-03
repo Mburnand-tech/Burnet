@@ -156,7 +156,7 @@
   right: 0px;
   width: 600px;
   top:0px;
-  left:20%;
+  left:17%;
   /* margin-left: 400px; */
   margin-top: 15px;
   padding: 1.5%;
@@ -169,15 +169,39 @@
   display: flex;
   align-items: flex-end;
   width: 200px;
-  top: -23px;
+  top: -50px;
   margin-right: 0%;
   /* margin-top: -10px; */
-  margin-left: 90px;
+  margin-left: 20px;
   position: absolute;
   font-size: xx-large;
-  font-family: 'Yuji Boku', serif;
-  font-size: 300%;
-  color:rgb(48, 48, 47)
+  
+  font-size: 500%;
+  /* color:rgb(61, 89, 112); */
+  color:#0D7680;
+  
+  
+  font-family: 'Libre Barcode 39 Text', cursive;
+  /* font-family: 'Metamorphous', cursive; */
+  /* font-family: 'Crete Round', serif;   */
+  /* font-family: 'Faster One', cursive; */
+  /* font-family: 'Kalam', cursive; */
+  /* font-family: 'Luckiest Guy', cursive; */
+  /* font-family: 'Righteous', cursive; */
+  /* font-family: 'Sniglet', cursive; */
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  /* font-family: 'Yuji Boku', serif; */
+  /* font-family: 'Archivo', sans-serif; */
+  /* font-family: 'Yuji Boku', serif; */
+
+  /* font-family: 'Delius', cursive; */
+  /* font-family: 'Catamaran', sans-serif; */
+  /* font-family: 'Cabin700', sans-serif; */
+  /* font-family: 'Figtree', sans-serif; */
+  /* font-family: 'Hind Madurai700', sans-serif; */
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* font-family: 'Nunito', sans-serif; */
+  
 }
 
 .navBarElement{

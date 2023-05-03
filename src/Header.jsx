@@ -17,11 +17,11 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
     <header className={`App header`}>
         <nav>
             <Link className={' App logo'} to="/">        
-                <Avatar
+                {/* <Avatar
                     alt='Homepicture'
                     src={logo}
                     sx={{ width: 70, height: 70 }}
-                    />
+                    /> */}
             <h1 className={'App headerTitle'}>Burnet</h1>
             </Link>
             <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>          

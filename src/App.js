@@ -37,7 +37,7 @@ function App() {
     },
     palette: {
       primary: {
-        main: green[500], 
+        main: '#0D7680', 
         article: '#f2dfce', 
       },
     },
