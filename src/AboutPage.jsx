@@ -9,7 +9,10 @@ const About = () => {
             
             The goal I decided to work towards was to create a Reddit-inspired topical discussion site, allowing users to vote up/vote down articles they like/dislike, as well as post comments on articles.
             
-            Built using React, TailwindCSS for styling and Axios for API calls.</h1>
+            Built using React, TailwindCSS for styling and Axios for API calls.
+            
+            
+            Google fonts</h1>
         </div>
     )
 }

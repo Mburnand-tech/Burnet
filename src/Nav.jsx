@@ -19,7 +19,6 @@ const Nav = ({isLoggedIn, setIsLoggedIn}) => {
 
     return (
         <nav className={'App navBar'} >
-            
                 <Link className={'App navBarElement'} to='/category/coding'> Technology</Link>
                 <Link className={'App navBarElement'} to='/category/football' > Sports</Link>
                 <Link className={'App navBarElement'} to='/category/cooking' > LifeStyle</Link>

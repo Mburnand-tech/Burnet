@@ -12,12 +12,6 @@ import logo from './Pictures/bf2a7848f98e424a949522f4e61cb332.jpg'
 
 const Header = ({isLoggedIn, setIsLoggedIn}) => {
 
-    // const  { currentTheme, setCurrentTheme }  = useContext(ThemeContext)
-
-    // const changeTheme = () => {
-    //     currentTheme ==='light' ? setCurrentTheme('dark') : setCurrentTheme('light')
-    // }
-
 
  return (
     <header className={`App header`}>
@@ -29,10 +23,9 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
                     sx={{ width: 70, height: 70 }}
                     />
             </Link>
-            <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
-            {/* <Switch className={'App themeButton'} onChange={() => {changeTheme()}}></Switch> */}
-            
-            
+            <h1 className={'App headerTitle'}>Burnet</h1>
+            <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>          
+
         </nav>
     </header>
 

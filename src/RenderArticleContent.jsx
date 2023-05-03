@@ -18,18 +18,21 @@ const RenderArticle = ({article}) => {
     }, [article.article_id])
    
     return (
-        <Link className={'app articleLink'} to={`/articles/${article.article_id}`}>
             <div >
-                <h4 className={'App topic'}>{article.topic}</h4>
-                <h4 className={'App postedBy'}> Posted by {article.author}</h4>
-                <p className={'App postedDate'}>{moment(article.created_at, "YYYYMMDD").startOf('hour').fromNow()}</p>
-                <img src={article.article_img_url} alt={article.title} className={' App subjectArticlesPicture'}></img>
-                <h3 className={'App articleTitle'}> {article.title}</h3>
-                <p className={' App subjectArticlesBody'}>{articleContent}</p>
-                <p className={'App articleComments'}> Comments: {article.comment_count}</p>
-                <p className={'App articleLikes'}> Likes: {article.votes}</p>    
+                <Link className={'app articleLink'} to={`/category/${article.topic}`}>
+                    <h4 className={'App topic'}>{article.topic}</h4>
+                </Link>
+                <Link className={'app articleLink'} to={`/articles/${article.article_id}`}>
+                    <h4 className={'App postedBy'}> Posted by {article.author}</h4>
+                    <p className={'App postedDate'}>{moment(article.created_at, "YYYYMMDD").startOf('hour').fromNow()}</p>
+                    <img src={article.article_img_url} alt={article.title} className={' App subjectArticlesPicture'}></img>
+                    <h3 className={'App articleTitle'}> {article.title}</h3>
+                    <p className={' App subjectArticlesBody'}>{articleContent}</p>
+                    <p className={'App articleComments'}> Comments: {article.comment_count}</p>
+                    <p className={'App articleLikes'}> Likes: {article.votes}</p>    
+                </Link>
             </div>
-        </Link>
+            
     )
 }
 
