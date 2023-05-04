@@ -8,5 +8,7 @@ notes
 
 - dates are sensitive to the minute. 
 
+- can delete comment if logged in as the same user
+
 
 

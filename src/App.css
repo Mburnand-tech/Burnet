@@ -22,6 +22,10 @@
   opacity: 1;
   float: top;
   float: right;
+  /* height: 120px; */
+  /* margin-bottom: 100px; */
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(104, 104, 103);
   margin-right: 150%;
   margin-top: -100%;
 
@@ -215,7 +219,8 @@
 }
 
 .navBarElement:hover{
-  color: #827f7f
+  color: #827f7f;
+  color: #0D7680;
 }
 
 
@@ -517,7 +522,7 @@ a:link {
   margin-right: 10px;
   margin-left: 5px;
   font-weight: 700;
-  color: #1f1d1d;
+  color: #990f3d;
   /* font-family: 'Figtree ExtraBold 800 Italic', sans-serif; */
   /* color: #615c5c; */
 }
@@ -640,11 +645,8 @@ a:link {
   margin-left: 15%;
 }
 
-.postedDateOpened{
-  margin: 0%;
-  display: inline-block;
-  font-size: smaller;
-  font-family: 'Figtree', sans-serif;
+.articleTitleOpened{
+  text-align: center;
 }
 
 .postedByOpened{
@@ -653,6 +655,7 @@ a:link {
   margin: 0%;
   margin-right: 10px;
   border: 0%;
+  margin-left: 15px;
   /* float: right; */
   clear: right;
   font-size: medium;
@@ -660,12 +663,24 @@ a:link {
   font-family: 'Figtree', sans-serif;
 }
 
+.postedDateOpened{
+  margin: 0%;
+  display: inline-block;
+  font-size: smaller;
+  font-family: 'Figtree', sans-serif;
+}
+
+
 .subjectArticlesPictureOpened{
   height: 90%;
   width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  outline-style: outset;
+  outline-color: #949191;
+  /* outline: 3px rgb(193, 192, 192); */
+  /* outline: auto; */
   /* margin: 20%; */
   /* margin-top: 20px; */
 }
@@ -677,29 +692,85 @@ a:link {
   font-family: 'Catamaran', sans-serif;
 }
 
+.commentsTitle{
+  font-size: x-large;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  /* padding-top: 100px; */
+  /* margin-top: 100px; */
+  top: 40px;
+  /* width:100%; */
+  /* text-align: center; */
+  position: relative;
+  border-top: 3px solid rgb(137, 137, 135);
+  /* border-top: 3px solid #0D7680; */
+}
+
+.commentAdderDiv{
+  width: auto;
+  /* outline: auto; */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.commentAdderForm{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  /* margin: auto; */
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  /* outline: auto; */
+}
+
+.postCommentButton{
+  background-color: #0D7680;
+  height:30px;
+  float: right;
+}
+
 .commentsList{
   /* margin-left: 130px; */
   margin-right: 10%; 
   list-style-type: none;
+  position: relative;
+  /* margin-top: 80px; */
 }
 
 .commentAvatar{
   display: inline-block;
+  padding-top: 30px;
 }
 
 .commentPostedByOpened{
   display: inline-block;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding-top: 30px;
+  position: relative;
+  top: -20px;
 }
 
 .commentDateOpened{
   display: inline-block;
   font-size: x-small;;
   font-family: 'Comfortaa', cursive;
+  position: relative;
+  top: -20px;
+  margin-left: 15px;
+  padding-top: 30px;
 }
 
 .commentBodyOpened{
-  display: inline-block;
-
+  /* display: inline-block; */
+  /* margin-bottom: 50px; */
+  margin: 0px;
+  padding-left: 60px;
+  float: left;
+  position: relative;
+  top: -10px;
   font-family: 'Delius', cursive;
   /* font-family: 'Catamaran', sans-serif; */
   /* font-family: 'Cabin700', sans-serif; */
@@ -725,6 +796,15 @@ a:link {
   /* font-family: 'Yuji Boku', serif; */
 }
 
+
+.likeButtonOpened{
+  float: right;
+  position: relative;
+  height: 20px;
+  width: 80px;
+  top:0px;
+  background-color: #676767;
+}
 
 
 /* FOOTER */

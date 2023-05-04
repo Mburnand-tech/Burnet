@@ -38,7 +38,8 @@ function App() {
     palette: {
       primary: {
         main: '#0D7680', 
-        article: '#f2dfce', 
+        article: '#f2dfce',
+        likeButton: "#676767" 
       },
     },
   });

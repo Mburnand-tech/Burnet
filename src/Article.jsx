@@ -122,9 +122,9 @@ const Article = () => {
         <div>
             <div className={'App articleOpened'}>
                 <Paper sx={{backgroundColor: 'primary.article'}} elevation={24}>
-                    <h3 className={'App postedByOpened'}>Created by: {articleContent[0].author}</h3>
+                    <h3 className={'App postedByOpened'}>Created by {articleContent[0].author}</h3>
                     <h3 className={'App postedDateOpened'}>{moment(articleContent[0].created_at).startOf().fromNow()}</h3>
-                    <h1>{articleContent[0].title}</h1>
+                    <h1 className='App articleTitleOpened'>{articleContent[0].title}</h1>
                     <img src={articleContent[0].article_img_url} alt={articleContent[0].title} className={' App subjectArticlesPictureOpened'}></img>
                     <p className={'App subjectArticleBodyOpened'}>{articleContent[0].body} </p>
                     <Button onClick={() => handleArticleLike()}>👍 {articleContent[0].votes}</Button>
@@ -133,7 +133,7 @@ const Article = () => {
             </div>
             <div className={'App articleOpened'}>
                 <Paper sx={{backgroundColor: 'primary.article'}} elevation={24}>
-                    <h2>Comments</h2>
+                    <h2 className='App commentsTitle'>Comments</h2>
                     <CommentAdder setArticleComments={setArticleComments} article_id={article_id}/>
                     <ul className={'App commentsList'}>
                         {articleComments.map((comment) => {
@@ -144,7 +144,10 @@ const Article = () => {
                                     <h5 className={'App commentPostedByOpened'}>{comment.author}</h5>
                                     <p className={'App commentDateOpened'}>{moment(comment.created_at).startOf().fromNow()}</p>
                                     <p className={'App commentBodyOpened'}>{comment.body}</p>
-                                    <Button onClick={() => handleCommentLike(comment.comment_id)}>👍 {comment.votes}</Button>
+                                    <Button variant="contained" className='App likeButtonOpened' onClick={() => handleCommentLike(comment.comment_id)} sx={{backgroundColor: '#3d7176', border: '1px solid black', '&:hover': {
+                                    border: '1px solid grey'
+                   }}}
+                                    >👍 {comment.votes}</Button>
                                     {currentUser === 'null' ? null : comment.author === currentUser[0].username ? <Button onClick={()=> handleDeleteComment(comment.comment_id)}>delete</Button> : null}
                                     {errComment !== '' ? <p>{errComment.message}</p>: ''}
                                 </li>
