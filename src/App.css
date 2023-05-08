@@ -26,6 +26,7 @@
   /* margin-bottom: 100px; */
   padding-bottom: 5px;
   border-bottom: 2px solid rgb(104, 104, 103);
+  border-top: 2px solid rgb(104, 104, 103);
   margin-right: 150%;
   margin-top: -100%;
 
@@ -45,7 +46,7 @@
   background-color: #f2dfce;
 }
 .dark{
-  background-color: #0D7680;
+  background-color: #372548;
 }
 .dark.header{
   background-color: aquamarine;
@@ -692,6 +693,18 @@ a:link {
   font-family: 'Catamaran', sans-serif;
 }
 
+.articleOpenLike{
+  /* align-items: end;
+  align-content: end;
+  position: relative;
+  left: 350px; */
+  /* float: right; */
+  left: 82%;
+  margin-right: 2%;
+  max-width: 85%;
+  top: -8px;
+}
+
 .commentsTitle{
   font-size: x-large;
   margin-left: 5%;
@@ -717,8 +730,9 @@ a:link {
 
 .commentAdderForm{
   width: 100%;
+  height: 50px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   /* margin: auto; */
   /* margin-left: 5%;
   margin-right: 5%; */
@@ -728,6 +742,7 @@ a:link {
 .postCommentButton{
   background-color: #0D7680;
   height:30px;
+  top: -30px;
   float: right;
 }
 
@@ -741,14 +756,17 @@ a:link {
 
 .commentAvatar{
   display: inline-block;
-  padding-top: 30px;
+  /* float: left; */
+  /* padding-top: 30px;
+  margin-top: 30px; */
+  margin-top: 0px;
 }
 
 .commentPostedByOpened{
   display: inline-block;
   margin-left: 20px;
   margin-top: 0px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
   position: relative;
   top: -20px;
 }
@@ -760,17 +778,25 @@ a:link {
   position: relative;
   top: -20px;
   margin-left: 15px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
+  margin-top: 0px;
 }
 
 .commentBodyOpened{
   /* display: inline-block; */
   /* margin-bottom: 50px; */
   margin: 0px;
-  padding-left: 60px;
-  float: left;
+  padding-left: 30px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+  /* float: left; */
   position: relative;
   top: -10px;
+  border-left: 2px solid rgb(153, 153, 152);
+  /* margin-bottom: 50px; */
   font-family: 'Delius', cursive;
   /* font-family: 'Catamaran', sans-serif; */
   /* font-family: 'Cabin700', sans-serif; */
@@ -802,8 +828,16 @@ a:link {
   position: relative;
   height: 20px;
   width: 80px;
-  top:0px;
+  top:-25px;
   background-color: #676767;
+}
+
+.deleteButtonOpen{
+  float: right;
+  height: 20px;
+  width: 0px;
+  top: -24px;
+  left: -20px;
 }
 
 
@@ -871,3 +905,8 @@ a:link {
 .footerFakeLinks:hover{
   text-decoration: underline;
 }
+
+
+
+/* ABOUT PAGE */
+

@@ -35,14 +35,14 @@ const CommentAdder = ({setArticleComments, article_id}) => {
                 <label htmlFor="newComment"></label>
                 <textarea 
                 className='App commentAdderForm'
-                placeholder='  Write a comment ...'
+                placeholder=' Write a comment ...'
                 rows='10'
                 
                 id="newComment"
                 value={newComment}
                 onChange={(e) => setNewComment(e.target.value)}
                 ></textarea>
-                {isLoading === false ? <Button className='App postCommentButton' variant="contained">Post Comment</Button> : ''}
+                {isLoading === false ? <Button className='App postCommentButton' variant="contained" onClick={handleSubmit}>Post Comment</Button> : ''}
                 {err !== '' ? <p>{err.message}</p>:''}
             </form>}
         </div>

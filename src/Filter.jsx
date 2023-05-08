@@ -25,7 +25,7 @@ const Filter = () => {
  return (
     <div className={'App filterBar'}>
         <FormControl>
-            <FormLabel className={' App filterBarButtons'}>Filter Results</FormLabel>
+            {/* <FormLabel className={' App filterBarButtons'}>Fi</FormLabel> */}
             <RadioGroup className={' App filterBarButtons'} defaultValue='date'><label>Sort By:</label>
                 <FormControlLabel className={' App filterBarButtons'} value="date" onChange={setSortBy} control={<Radio />} label='Date'/>
                 <FormControlLabel className={' App filterBarButtons'} value="author" onChange={setSortBy} control={<Radio />} label='Author'/>

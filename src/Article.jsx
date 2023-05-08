@@ -5,7 +5,8 @@ import CommentAdder from './CommentAdder'
 import { Button } from '@mui/material';
 import { UserContext } from './contexts/UserContext'
 import moment from 'moment-timezone';
-import { Paper, Avatar, CircularProgress} from '@mui/material'
+import { Paper, Avatar, CircularProgress } from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 
 
@@ -127,28 +128,25 @@ const Article = () => {
                     <h1 className='App articleTitleOpened'>{articleContent[0].title}</h1>
                     <img src={articleContent[0].article_img_url} alt={articleContent[0].title} className={' App subjectArticlesPictureOpened'}></img>
                     <p className={'App subjectArticleBodyOpened'}>{articleContent[0].body} </p>
-                    <Button onClick={() => handleArticleLike()}>👍 {articleContent[0].votes}</Button>
+                    <Button className='App articleOpenLike' onClick={() => handleArticleLike()} variant="contained"  sx={{backgroundColor: '#3d7176'}}>👍 {articleContent[0].votes}</Button>
                     {errArticle !== '' ? <p>{errArticle.message}</p>: ''}
                 </Paper>
             </div>
             <div className={'App articleOpened'}>
-                <Paper sx={{backgroundColor: 'primary.article'}} elevation={24}>
+                <Paper  sx={{backgroundColor: 'primary.article', height: '110%', paddingBottom: '5%'}} elevation={24}>
                     <h2 className='App commentsTitle'>Comments</h2>
                     <CommentAdder setArticleComments={setArticleComments} article_id={article_id}/>
                     <ul className={'App commentsList'}>
                         {articleComments.map((comment) => {
                             return (
                                 <li key={comment.comment_id}>
-                                    {/* <script>console.log(comment)</script> */}
                                     <div className={'App commentAvatar'}><Avatar src={comment.avatar_url}></Avatar></div>
                                     <h5 className={'App commentPostedByOpened'}>{comment.author}</h5>
                                     <p className={'App commentDateOpened'}>{moment(comment.created_at).startOf().fromNow()}</p>
                                     <p className={'App commentBodyOpened'}>{comment.body}</p>
-                                    <Button variant="contained" className='App likeButtonOpened' onClick={() => handleCommentLike(comment.comment_id)} sx={{backgroundColor: '#3d7176', border: '1px solid black', '&:hover': {
-                                    border: '1px solid grey'
-                   }}}
+                                    <Button variant="contained" className='App likeButtonOpened' onClick={() => handleCommentLike(comment.comment_id)} sx={{backgroundColor: '#3d7176'}}
                                     >👍 {comment.votes}</Button>
-                                    {currentUser === 'null' ? null : comment.author === currentUser[0].username ? <Button onClick={()=> handleDeleteComment(comment.comment_id)}>delete</Button> : null}
+                                    {currentUser === 'null' ? null : comment.author === currentUser[0].username ? <Button className='App deleteButtonOpen' variant="outlined" onClick={()=> handleDeleteComment(comment.comment_id)} aria-label="delete" size="small"><DeleteIcon fontSize="small"/></Button> : null}
                                     {errComment !== '' ? <p>{errComment.message}</p>: ''}
                                 </li>
                             )
