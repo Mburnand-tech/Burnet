@@ -24,7 +24,9 @@ const Nav = ({isLoggedIn, setIsLoggedIn}) => {
                 <Link className={'App navBarElement'} to='/category/cooking' > LifeStyle</Link>
                 <Link className={'App navBarElement'} to='/about' > About</Link>
                 <User isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
-                <MaterialUISwitch className={'App themeButton'} onChange={() => {changeTheme()}}></MaterialUISwitch>
+                <div className={'App themeButton'}>
+                    <MaterialUISwitch onChange={() => {changeTheme()}}></MaterialUISwitch>
+                </div>
             
         </nav>
     )

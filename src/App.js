@@ -38,8 +38,10 @@ function App() {
     palette: {
       primary: {
         main: '#0D7680', 
+        secondary: '#1f1d1d', 
         article: '#f2dfce',
-        likeButton: "#676767" 
+        likeButton: "#676767",
+        homeButton: '#1f1d1d' 
       },
     },
   });

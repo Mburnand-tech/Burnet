@@ -5,7 +5,7 @@ import './App.css'
 const Footer = () => {
     return (
         <div className={'App footerSection'}>
-                <Link className={'App footerElement'} to='/category/coding'> Home</Link>
+                <Link className={'App footerElement'} to="/" onClick="window.location.href='#top'"> Home</Link>
                 <Link className={'App footerElement'} to='/category/coding'> Technology</Link>
                 <Link className={'App footerElement'} to='/category/football' > Sports</Link>
                 <Link className={'App footerElement'} to='/category/cooking' > LifeStyle</Link>

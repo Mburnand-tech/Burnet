@@ -1,6 +1,6 @@
 import { useContext , useState} from 'react'
 import { UserContext } from './contexts/UserContext'
-import { Avatar, Tooltip } from '@mui/material'
+import { Avatar, Tooltip, Button } from '@mui/material'
 
 import './App.css';
 
@@ -38,7 +38,7 @@ const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
         return (
             <div>
                 { showSignIn === true ?
-                <button onClick={handleLogin} >Sign in</button> : null
+                <Button variant="contained" className={"App signIn"}onClick={handleLogin} >Sign in</Button> : null
         }
             </div>
         )
