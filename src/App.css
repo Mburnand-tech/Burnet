@@ -673,8 +673,23 @@ a:link {
   width: 100px;
 }
 
+.filterBarTitles{
+  margin-left: 20px;
+  /* padding-left:10%; */
+  width: 100px;
+  color: #000;
+  font-weight: 600;
+}
+
+.AscDescButton{
+  margin-left: 20px;
+}
+
 @media (max-width: 780px) {
-  .filterBar{
+  .filterBarLight{
+    display: none;
+  }
+  .filterBarDark{
     display: none;
   }
 }

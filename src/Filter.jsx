@@ -29,17 +29,18 @@ const Filter = () => {
     <div className={currentTheme === 'light' ? `App filterBarLight` : `App filterBarDark` }>
         <FormControl>
             {/* <FormLabel className={' App filterBarButtons'}>Fi</FormLabel> */}
-            <RadioGroup className={' App filterBarButtons'} defaultValue='date'><label>Sort By:</label>
+            <RadioGroup className={' App filterBarTitles'} defaultValue='date'><label>Sort By:</label>
                 <FormControlLabel className={' App filterBarButtons'} value="date" onChange={setSortBy} control={<Radio />} label='Date'/>
                 <FormControlLabel className={' App filterBarButtons'} value="author" onChange={setSortBy} control={<Radio />} label='Author'/>
                 <FormControlLabel  className={' App filterBarButtons'}value="title" onChange={setSortBy} control={<Radio />} label='Title'/>
                 <FormControlLabel className={' App filterBarButtons'} value="votes" onChange={setSortBy} control={<Radio />} label='Votes'/>
                 <FormControlLabel className={' App filterBarButtons'} value="comment_count" onChange={setSortBy} control={<Radio />} label='Comments'/>
             </RadioGroup>
-            <label className={' App filterBarButtons'}>Order By:</label>
+            <label className={' App filterBarTitles'}>Order By:</label>
             <div></div>
             <span className={' App filterBarButtons'}>Desc</span>
                 <Switch
+                 className='App AscDescButton'
                  onChange={setOrderBy}
                  size="small"
                  inputProps={{ 'aria-label': 'controlled' }}
