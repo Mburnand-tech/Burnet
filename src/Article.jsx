@@ -31,7 +31,6 @@ const Article = () => {
         Promise.all([fetchSpecificArticle(article_id), getArticleReviews(article_id)])
         .then(([{article} , comments ]) => {
             const returnComments = []
-            let counter = 0 
             comments.forEach((comment) => {
                 getUser(comment.author).then((result) => {
                         comment['avatar_url'] = result[0].avatar_url

@@ -46,10 +46,11 @@
   background-color: #f2dfce;
 }
 .dark{
-  background-color: #372548;
+  background-color: #121212;
+
 }
 .dark.header{
-  background-color: aquamarine;
+  background-color: #6aa08e;
 }
 
 
@@ -67,8 +68,10 @@
   border-bottom: 1.5px solid rgb(118, 118, 115);
   color: green;
   position: static;
-  margin: auto;
+  margin-right: -5%;
   clear: Inline-end;
+  /* width: 110%; */
+
   padding: 0.5%;
   height: 110px;
   background-color: #d7c7ba;
@@ -92,7 +95,7 @@
 .signIn{
   float: left;
   top: 0px;
-  right: -85px;
+  right: -90px;
   margin-top: 20px;
   padding-top: 1.5%;
   margin-left:0px;
@@ -102,9 +105,9 @@
 
 .logOut{
   float: top;
-  float: left;
-  top: 0px;
-  right: -85px;
+  float: right;
+  top: px;
+  right: -25px;
   margin-top: 20px;
   padding-top: 1.5%;
   margin-left:0px;
@@ -124,7 +127,7 @@
 .loggedInAvatar{
   outline: auto;
   color: black;
-  right: -20px;
+  right: -130px;
   top: -35px
 }
 
@@ -634,7 +637,7 @@ a:link {
 
 
 /* FILTER BAR  */
-.filterBar {
+.filterBarLight {
   width: 150px;
   float: left;
   top: 150px;
@@ -646,6 +649,21 @@ a:link {
   color:rgb(80, 80, 78);
   color:rgb(41, 85, 76);
   background-color: #d7c7ba;
+  position: absolute;  
+}
+
+.filterBarDark {
+  width: 150px;
+  float: left;
+  top: 150px;
+  left: 0px;
+  margin-top: 50px;
+  outline: auto;
+  outline-color: rgb(41, 85, 76);
+  outline-width:50in;
+  color:rgb(80, 80, 78);
+  color:rgb(41, 85, 76);
+  background-color: #342C44;
   position: absolute;  
 }
 

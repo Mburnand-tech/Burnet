@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { useState , useContext} from 'react'
-
+import ScrollToTop from "react-scroll-to-top";
 import './App.css';
 
 import Header from './Header'
@@ -12,7 +12,7 @@ import Footer from './Footer'
 
 
 
-import { red, green } from '@mui/material/colors'
+import { red } from '@mui/material/colors'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { ThemeContext } from './contexts/themeContext'
 
@@ -39,7 +39,8 @@ function App() {
       primary: {
         main: '#0D7680', 
         secondary: '#1f1d1d', 
-        article: '#f2dfce',
+        article: currentTheme === 'light' ? '#f2dfce' : "#018786",
+        header: currentTheme === 'light' ? '#d7c7ba' : "#342C44",
         likeButton: "#676767",
         homeButton: '#1f1d1d' 
       },
@@ -56,6 +57,7 @@ function App() {
                 <Route path="/articles/:article_id" element={<Article/>}/>
                 <Route path="/about" element={<About/>}/>
         </Routes>
+        <ScrollToTop/>
         <Footer/>
       </ThemeProvider>
     </div>

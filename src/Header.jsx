@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom' 
-import { Avatar } from '@mui/material';
+import { Container } from '@mui/material';
 import './App.css';
 // import { useContext } from 'react'
 // import { Switch } from '@mui/material'
@@ -14,7 +14,7 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
 
 
  return (
-    <header className={`App header`}>
+    <Container className={`App header`} sx={{backgroundColor: 'primary.header'}} maxWidth="false"/*tyle="border-bottom: 1.5px solid rgb(118, 118, 115); , color: green;, position: static;, margin: auto; , clear: Inline-end;, padding: 0.5%;, height: 110px;, background-color: #d7c7ba;" */>
         <nav>
             <Link className={' App logo'} to="/">        
                 {/* <Avatar
@@ -27,7 +27,7 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
             <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>          
 
         </nav>
-    </header>
+    </Container>
 
     
  )

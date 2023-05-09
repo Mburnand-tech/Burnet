@@ -1,11 +1,14 @@
-import {  Switch, FormControl, FormLabel, RadioGroup, FormControlLabel, Radio} from '@mui/material';
-
+import {  Switch, FormControl, RadioGroup, FormControlLabel, Radio } from '@mui/material';
+import { useContext} from 'react'
 import { useSearchParams } from 'react-router-dom' 
+import { ThemeContext } from './contexts/themeContext'
 
 import './App.css';
 
 const Filter = () => {
     const [searchParams, setSearchParams] = useSearchParams({})
+    const { currentTheme }  = useContext(ThemeContext)
+
 
     const setSortBy = (e) => {
         const newParams = new URLSearchParams(searchParams)
@@ -23,7 +26,7 @@ const Filter = () => {
 
 //className='checkbox-dropdown'
  return (
-    <div className={'App filterBar'}>
+    <div className={currentTheme === 'light' ? `App filterBarLight` : `App filterBarDark` }>
         <FormControl>
             {/* <FormLabel className={' App filterBarButtons'}>Fi</FormLabel> */}
             <RadioGroup className={' App filterBarButtons'} defaultValue='date'><label>Sort By:</label>

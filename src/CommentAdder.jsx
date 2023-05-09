@@ -5,7 +5,7 @@ import { useContext } from 'react'
 import { Button } from '@mui/material'
 
 const CommentAdder = ({setArticleComments, article_id}) => {
-    const {currentUser , setCurrentUser} = useContext(UserContext)
+    const {currentUser } = useContext(UserContext)
     const [newComment, setNewComment ] = useState('')
     const [isLoading, setIsLoading ] = useState(false)
     const [err, setErr] = useState('')
@@ -37,7 +37,6 @@ const CommentAdder = ({setArticleComments, article_id}) => {
                 className='App commentAdderForm'
                 placeholder=' Write a comment ...'
                 rows='10'
-                
                 id="newComment"
                 value={newComment}
                 onChange={(e) => setNewComment(e.target.value)}
