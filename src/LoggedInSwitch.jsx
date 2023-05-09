@@ -24,7 +24,7 @@ const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
     if (isLoggedIn=== true){
         return (
             <div className={'App signedInElements'}>
-                <button onClick={handleSignOut} className={'App logOut'} >Log out</button>
+                <Button variant="contained" onClick={handleSignOut} className={'App logOut'} size='small' >Log out</Button>
                 <Tooltip title={currentUser[0].name }>
                     <Avatar src={currentUser[0].avatar_url} alt='profile'  sx={{ width: 44, height: 44 }} variant="circular" className={'App loggedInAvatar'}/>
                 </Tooltip>
@@ -38,7 +38,7 @@ const LoggedInSwitch = ({isLoggedIn, setIsLoggedIn,  setLogInPortal}) => {
         return (
             <div>
                 { showSignIn === true ?
-                <Button variant="contained" className={"App signIn"}onClick={handleLogin} >Sign in</Button> : null
+                <Button variant="contained" className={"App signIn"}onClick={handleLogin} size='small'>Sign in</Button> : null
         }
             </div>
         )

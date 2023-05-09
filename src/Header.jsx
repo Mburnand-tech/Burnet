@@ -8,7 +8,7 @@ import './App.css';
 import Nav from './Nav'
 
 
-import logo from './Pictures/bf2a7848f98e424a949522f4e61cb332.jpg'
+// import logo from './Pictures/bf2a7848f98e424a949522f4e61cb332.jpg'
 
 const Header = ({isLoggedIn, setIsLoggedIn}) => {
 

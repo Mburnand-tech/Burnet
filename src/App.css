@@ -22,13 +22,13 @@
   opacity: 1;
   float: top;
   float: right;
-  /* height: 120px; */
+  /* height: 60px; */
   /* margin-bottom: 100px; */
   padding-bottom: 5px;
-  border-bottom: 2px solid rgb(104, 104, 103);
-  border-top: 2px solid rgb(104, 104, 103);
-  margin-right: 150%;
-  margin-top: -100%;
+  /* border-bottom: 2px solid rgb(104, 104, 103);
+  border-top: 2px solid rgb(104, 104, 103); */
+  margin-right: -100%;
+  margin-top: -60%;
 
 }
 
@@ -92,15 +92,24 @@
 .signIn{
   float: left;
   top: 0px;
-  right: 0px;
-  margin-top: 25px;
-  margin-left:100px;
-  width: 90px;
+  right: -85px;
+  margin-top: 20px;
+  padding-top: 1.5%;
+  margin-left:0px;
+  width: 80px;
   position: absolute;
 }
 
 .logOut{
-  float: top
+  float: top;
+  float: left;
+  top: 0px;
+  right: -85px;
+  margin-top: 20px;
+  padding-top: 1.5%;
+  margin-left:0px;
+  width: 85px;
+  position: absolute;
 }
 
 .signedInElements{
@@ -115,8 +124,8 @@
 .loggedInAvatar{
   outline: auto;
   color: black;
-  right: 75px;
-  top: -40px
+  right: -20px;
+  top: -35px
 }
 
 
@@ -128,13 +137,13 @@
   margin-right: 20%;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1240px) {
 .themeButton{
   display: none;
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 900px) {
   .signedInElements {
     display: none;
   }
