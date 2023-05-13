@@ -982,13 +982,31 @@ a:link {
   margin-top: 30px;
 }
 
+.animate__animated.animate__fadeInDark {
+  align-content: center;
+  text-align: center;
+  /* margin: auto; */
+  margin-top: 30px;
+  background-color: #018786;
+}
+
 .animate__animated.animate__bounceInDown {
   --animate-duration: 2s;
   animation-delay: 0.25s;
   width: 70%;
   text-align: center;
   /* margin: auto; */
-  margin-top: 30px
+  margin-top: 20px;
+}
+
+.animate__animated.animate__bounceInDownDark {
+  --animate-duration: 2s;
+  animation-delay: 0.25s;
+  width: 70%;
+  text-align: center;
+  /* margin: auto; */
+  margin-top: 20px;
+  background-color: #018786;
 }
 
 .animate__animated.animate__bounceInUp {
@@ -997,9 +1015,24 @@ a:link {
   width: 70%;
   text-align: center;
   /* margin: auto; */
-  margin-top: 30px
+  margin-top: 20px;
 }
 
+.animate__animated.animate__bounceInUp.Link {
+
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.animate__animated.animate__bounceInUpDark {
+  --animate-duration: 2s;
+  animation-delay: 0.25s;
+  width: 70%;
+  text-align: center;
+  /* margin: auto; */
+  margin-top: 20px;
+  background-color: #018786;
+}
 
 .animate__animated.animate__bounceInLeft {
   --animate-duration: 2s;
@@ -1007,7 +1040,17 @@ a:link {
   width: 70%;
   text-align: center;
   /* margin: auto; */
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.animate__animated.animate__bounceInLeftDark {
+  --animate-duration: 2s;
+  animation-delay: 0.75s;
+  width: 70%;
+  text-align: center;
+  /* margin: auto; */
+  margin-top: 20px;
+  background-color: #018786;
 }
 
 .animate__animated.animate__bounceInRight{
@@ -1016,6 +1059,17 @@ a:link {
   width: 70%;
   /* margin: auto; */
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   /* --animate-delay: 10s; */
+}
+
+.animate__animated.animate__bounceInRightDark{
+  --animate-duration: 2s;
+  animation-delay: 1.25s;
+  width: 70%;
+  /* margin: auto; */
+  text-align: center;
+  margin-top: 20px;
+  /* --animate-delay: 10s; */
+  background-color: #018786;
 }

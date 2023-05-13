@@ -10,5 +10,8 @@ notes
 
 - can delete comment if logged in as the same user
 
+- list all possible users to log in as 
+
+
 
 
