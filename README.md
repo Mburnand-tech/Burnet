@@ -20,7 +20,20 @@ You can try out a live version of the app here:
 ### [Website](https://burnet-news.netlify.app/)
 
 PICTURES
-  
+
+
+  ![Screenshot (4)](https://github.com/Mburnand-tech/NC_News/assets/82216191/530564c6-4dd1-47bb-89fa-6538ca601d4c)
+
+
+![Screenshot (5)](https://github.com/Mburnand-tech/NC_News/assets/82216191/b2233103-2e25-4bba-8d3f-ea283d0720e3)
+
+
+![Screenshot (6)](https://github.com/Mburnand-tech/NC_News/assets/82216191/cf4b77a8-26d7-4e5b-b357-73d0c89bb470)
+
+
+![Uploading Screenshot (7).png…]()
+
+
 - **Log In with any of these Usernames:**
   - *tickle122*
   - *grumpy19*
