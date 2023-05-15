@@ -1,5 +1,3 @@
-### [Website](https://burnet-news.netlify.app/)
-
 # :question: Purpose
 
 This is my personal front-end project created as part of a one-week solo sprint while I was a student at Northcoders. Coupled with my [backend Project](https://github.com/Mburnand-tech/News_Server) the intention is to remonstrate I am capable of developing, usable and efficient full stack applications in JavaScript. 
@@ -11,7 +9,7 @@ It is a Reddit-inspired topical discussion site with a scrollable and responsive
 Additional features include a filter bar, account logging in, colour theme switch, scroll to top button and delete comments functionality.
 
 
-You can try out a live version of the app [here](https://burnet-news.netlify.app/).
+You can try out a live version of the app ### [here](https://burnet-news.netlify.app/)
 
 PICTURES
 
