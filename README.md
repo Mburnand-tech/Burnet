@@ -21,38 +21,16 @@ You can try out a live version of the app here:
 
 PICTURES
 
-<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976">
-![Screenshot (4)](https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976)
+<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976">
 
-<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/01e00fbf-6331-4620-b84e-52986dd435bd">
-![Screenshot (5)](https://github.com/Mburnand-tech/NC_News/assets/82216191/01e00fbf-6331-4620-b84e-52986dd435bd)
+<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/01e00fbf-6331-4620-b84e-52986dd435bd">
 
-<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/2fe60887-6e16-4067-a78d-01d7c3842e2a">
-![Screenshot (6)](https://github.com/Mburnand-tech/NC_News/assets/82216191/2fe60887-6e16-4067-a78d-01d7c3842e2a)
+<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/2fe60887-6e16-4067-a78d-01d7c3842e2a">
 
-<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/85700fdc-3122-44ff-ba73-7c3032f7e967">
-![Screenshot (7)](https://github.com/Mburnand-tech/NC_News/assets/82216191/85700fdc-3122-44ff-ba73-7c3032f7e967)
+<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/85700fdc-3122-44ff-ba73-7c3032f7e967">
 
-<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/55759a61-4213-4bb7-b142-7264ea32e4f7">
-![Screenshot (8)](https://github.com/Mburnand-tech/NC_News/assets/82216191/55759a61-4213-4bb7-b142-7264ea32e4f7)
+<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/55759a61-4213-4bb7-b142-7264ea32e4f7">
 
-
-<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/66c0c6a5-0893-4e35-9816-789c54647aec">
-![Screenshot (9)](https://github.com/Mburnand-tech/NC_News/assets/82216191/66c0c6a5-0893-4e35-9816-789c54647aec)
-
-
-
-<img width="500" height="250" alt="Screenshot (4)" src="">
-  ![Screenshot (4)](https://github.com/Mburnand-tech/NC_News/assets/82216191/530564c6-4dd1-47bb-89fa-6538ca601d4c){width="100px"}
-
-
-![Screenshot (5)](https://github.com/Mburnand-tech/NC_News/assets/82216191/b2233103-2e25-4bba-8d3f-ea283d0720e3)
-
-
-![Screenshot (6)](https://github.com/Mburnand-tech/NC_News/assets/82216191/cf4b77a8-26d7-4e5b-b357-73d0c89bb470)
-
-
-![Uploading Screenshot (7).png…]()
 
 
 - **Log In with any of these Usernames:**
