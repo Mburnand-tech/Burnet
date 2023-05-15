@@ -17,12 +17,12 @@ You can try out a live version of the app here:
 PICTURES
   
 Log In with any of these Usernames:
-**- tickle122**
-**- grumpy19**
-**- happyamy2016**
-**- cooljmessy**
-**- weegembump**
-**- jessjelly**
+- **tickle122**
+- **grumpy19**
+- **happyamy2016**
+- **cooljmessy**
+- **weegembump**
+- **jessjelly**
 
 # :computer: Installation
   
