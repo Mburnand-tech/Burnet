@@ -17,12 +17,12 @@ You can try out a live version of the app here:
 PICTURES
   
 Log In with any of these Usernames:
-- tickle122
-- grumpy19
-- happyamy2016
-- cooljmessy
-- weegembump
-- jessjelly
+###- tickle122
+###- grumpy19
+###- happyamy2016
+###- cooljmessy
+###- weegembump
+###- jessjelly
 
 # :computer: Installation
   
@@ -37,22 +37,25 @@ To install the app locally, follow these steps:
   
 The app has the following main pages:
 
-- Home Splash page welcoming the user
-- Articles Displays a list of all articles, and allows filtering articles by topic. Also allows user to sort articles by votes and comments (Most/Least first) as well as date created (Earliest/Latest first)
-- Articles/:topic Displays articles filtered by topic
-- Articles/:topic/:article_id Displays the details of specified article, including its comments and an input method to create new comments.
+- Home page showing the abundances of different articles to entice user. Ordered by date posted similiar to a topical social media. 
+- Category/:topic (Technology, LifeStyle, Sports) Displays articles categorised by subject. Within here you can filter results based off user preference. 
+- /about Gives a description of the project.
+- articles/:article_id Displays the details of specified article, including its comments and an option to like the article and its comments. If a user is logged in, theres an input method to leave comments and delete previous comments. 
   
 # :electric_plug: Dependencies
   
 This project requires the following dependencies:
 
 - axios: for making API requests
+- moment: for time data conversion
+- animate.css: for 'About' page animations
+- prop-types: for defining prop types
+- MUI: for styling the UI
 - react: for building the UI
 - react-dom: for rendering the UI
 - react-router-dom: for client-side routing
-- react-infinite-scroller: for continuous loading of paginated API on scroll
-- prop-types: for defining prop types
-- MUI: for styling the UI
+- react-scroll-to-top: for return to the top of page button
+
 - These dependencies are included in the package.json file and will be installed automatically with npm install.
 
 # :earth_africa: Contributing
