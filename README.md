@@ -9,11 +9,11 @@
 - The front end is built using React, with Axios for making API requests and MUI for styled components. 
   
 - Additional features include:
-  - filter bar
-  - account logging in
-  - colour theme switch
-  - scroll to top button
-  - leave & delete comments functionality.
+  - Filter bar
+  - Account logging in
+  - Colour theme switch
+  - Scroll to top button
+  - Leave & delete comments functionality.
 
 You can try out a live version of the app here:
 ### [Website](https://burnet-news.netlify.app/)
@@ -21,12 +21,12 @@ You can try out a live version of the app here:
 PICTURES
   
 **Log In with any of these Usernames:**
-- *tickle122*
-- *grumpy19*
-- *happyamy2016*
-- *cooljmessy*
-- *weegembump*
-- *jessjelly*
+  - *tickle122*
+  - *grumpy19*
+  - *happyamy2016*
+  - *cooljmessy*
+  - *weegembump*
+  - *jessjelly*
 
 # :computer: Installation
   
