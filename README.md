@@ -20,6 +20,7 @@ You can try out a live version of the app here:
 ### [Website](https://burnet-news.netlify.app/)
 
 PICTURES
+![Uploading Screenshot (4).png…]()
 
 <img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/530564c6-4dd1-47bb-89fa-6538ca601d4c">
   ![Screenshot (4)](https://github.com/Mburnand-tech/NC_News/assets/82216191/530564c6-4dd1-47bb-89fa-6538ca601d4c){width="100px"}
