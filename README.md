@@ -1,4 +1,3 @@
-# [Website](https://burnet-news.netlify.app/)
 # :question: Purpose
 
 - This is my personal front-end project created as part of a one-week solo sprint while I was a student at Northcoders. 
@@ -9,7 +8,12 @@
 - It is a Reddit-inspired topical discussion site with a scrollable and responsive display that allows users to like articles and comments and post comments on articles. 
 - The front end is built using React, with Axios for making API requests and MUI for styled components. 
   
-- Additional features include a filter bar, account logging in, colour theme switch, scroll to top button and delete comments functionality.
+- Additional features include:
+  - filter bar
+  - account logging in
+  - colour theme switch
+  - scroll to top button
+  - leave & delete comments functionality.
 
 You can try out a live version of the app here:
 ### [Website](https://burnet-news.netlify.app/)
