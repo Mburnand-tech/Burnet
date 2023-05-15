@@ -20,9 +20,9 @@ PICTURES
 - *tickle122*
 - *grumpy19*
 - *happyamy2016*
-- *cooljmessy
-- *weegembump
-- *jessjelly
+- *cooljmessy*
+- *weegembump*
+- *jessjelly*
 
 # :computer: Installation
   
