@@ -1,4 +1,4 @@
-## [Website](https://burnet-news.netlify.app/).
+### [Website](https://burnet-news.netlify.app/)
 
 # :question: Purpose
 
