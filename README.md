@@ -9,7 +9,8 @@ It is a Reddit-inspired topical discussion site with a scrollable and responsive
 Additional features include a filter bar, account logging in, colour theme switch, scroll to top button and delete comments functionality.
 
 
-You can try out a live version of the app ### [here](https://burnet-news.netlify.app/)
+You can try out a live version of the app here:
+### [Website](https://burnet-news.netlify.app/)
 
 PICTURES
 
