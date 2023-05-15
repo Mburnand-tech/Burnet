@@ -21,11 +21,11 @@ You can try out a live version of the app here:
 
 PICTURES
 
-<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976">
+<img width="450" height="225" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976">
 
-<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/01e00fbf-6331-4620-b84e-52986dd435bd">
+<img width="450" height="225" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/01e00fbf-6331-4620-b84e-52986dd435bd">
 
-<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/2fe60887-6e16-4067-a78d-01d7c3842e2a">
+<img width="450" height="225" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/2fe60887-6e16-4067-a78d-01d7c3842e2a">
 
 <img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/85700fdc-3122-44ff-ba73-7c3032f7e967">
 
