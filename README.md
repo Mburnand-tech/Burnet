@@ -1,4 +1,4 @@
-# Purpose
+# :microphone: Purpose
 
 This is my personal front-end project created as part of a one-week solo sprint while I was a student at Northcoders. Coupled with my [backend Project](https://github.com/Mburnand-tech/News_Server) the intention is to remonstrate I am capable of developing, usable and efficient full stack applications in JavaScript. 
 
