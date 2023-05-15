@@ -21,9 +21,9 @@ You can try out a live version of the app here:
 
 PICTURES
 
-<img width="550" height="275" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976">
+<img width="525" height="263" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976">
 
-<img width="550" height="275" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/01e00fbf-6331-4620-b84e-52986dd435bd">
+<img width="525" height="263" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/01e00fbf-6331-4620-b84e-52986dd435bd">
 
 <img width="450" height="225" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/2fe60887-6e16-4067-a78d-01d7c3842e2a">
 
