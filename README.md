@@ -9,7 +9,7 @@ It is a Reddit-inspired topical discussion site with a scrollable and responsive
 Additional features include a filter bar, account logging in, colour theme switch, scroll to top button and delete comments functionality.
 
 
-You can try out a live version of the app here (link).
+You can try out a live version of the app [here](https://burnet-news.netlify.app/).
 
 PICTURES
 
@@ -22,9 +22,9 @@ Log In with any of these Usernames:
   
 To install the app locally, follow these steps:
 
-Clone the repository: git clone https://github.com/your-username/NC-News-Front-End.git
-Install dependencies: npm install
-Start the app: npm start
+Clone the repository: `git clone https://github.com/Mburnand-tech/NC_News.git`
+Install dependencies: `npm install`
+Start the app: `npm start`
 The app should be running on http://localhost:3000
 
 # Usage
@@ -46,7 +46,7 @@ react-dom: for rendering the UI
 react-router-dom: for client-side routing
 react-infinite-scroller: for continuous loading of paginated API on scroll
 prop-types: for defining prop types
-tailwindcss: for styling the UI
+MUI: for styling the UI
 These dependencies are included in the package.json file and will be installed automatically with npm install.
 
 # Contributing
