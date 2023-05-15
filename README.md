@@ -6,14 +6,15 @@
 # :microphone: Descripion
   
 - It is a Reddit-inspired topical discussion site with a scrollable and responsive display that allows users to like articles and comments and post comments on articles. 
-- The front end is built using React, with Axios for making API requests and MUI for styled components. 
+- The Front-End is built using React, with Axios for making API requests and MUI for styled components. 
   
 - Additional features include:
-  - Filter bar
-  - Account logging in
-  - Colour theme switch
-  - Scroll to top button
+  - Filter bar.
+  - Account logging in.
+  - Colour theme switch.
+  - Scroll to top button.
   - Leave & delete comments functionality.
+  - Date's sensitive to minutes ago from present. 
 
 You can try out a live version of the app here:
 ### [Website](https://burnet-news.netlify.app/)
