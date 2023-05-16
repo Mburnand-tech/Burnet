@@ -27,7 +27,7 @@ The app has the following main pages:
 - **/about** - Gives a description of the project.
 - **articles/:article_id** - Displays the details of specified article, including its comments and an option to like the article and its comments. If a user is logged in, theres an input method to leave comments and delete previous comments. 
 
-- **Log In with any of these Usernames:**
+- Log In with any of these Usernames:
   - *tickle122*
   - *grumpy19*
   - *happyamy2016*
