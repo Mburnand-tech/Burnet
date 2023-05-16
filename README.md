@@ -34,7 +34,8 @@ PICTURES
 <img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/c6eae56d-04be-4688-b1d5-a10f50493250">
 
 
-- **Log In with any of these Usernames:**
+
+**Log In with any of these Usernames:**
   - *tickle122*
   - *grumpy19*
   - *happyamy2016*
