@@ -1,5 +1,5 @@
-<!-- <div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: CLICK FOR LIVE VERSION :point_left: :point_left: <a><div> -->
-
+<div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: CLICK FOR LIVE VERSION :point_left: :point_left: <a><div>
+<div align="left>
 # :question: Purpose
 
 - This is my personal Front-End project created as part of a one-week solo sprint while I was a student at Northcoders. 
@@ -98,6 +98,8 @@ notes
 - list all possible users to log in as 
 
 ### [WEBSITE](https://burnet-news.netlify.app/)
+                                                                         
+<div>
 
   <div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: CLICK FOR LIVE VERSION :point_left: :point_left: <a><div>
   
