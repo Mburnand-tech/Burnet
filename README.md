@@ -54,7 +54,10 @@ The app has the following main pages:
   
 To install the app locally, follow these steps:
 
-- Clone the repository: `git clone https://github.com/Mburnand-tech/NC_News.git`
+- Clone the repository: 
+  ```basg
+  git clone https://github.com/Mburnand-tech/NC_News.git`
+  ```
 - Install dependencies: `npm install`
 - Start the app: `npm start`
 - The app should be running on http://localhost:3000
