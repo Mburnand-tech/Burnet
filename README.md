@@ -34,15 +34,6 @@ PICTURES
 <img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/c6eae56d-04be-4688-b1d5-a10f50493250">
 
 
-
-**Log In with any of these Usernames:**
-  - *tickle122*
-  - *grumpy19*
-  - *happyamy2016*
-  - *cooljmessy*
-  - *weegembump*
-  - *jessjelly*
-
 # :computer: Installation
   
 To install the app locally, follow these steps:
@@ -60,6 +51,14 @@ The app has the following main pages:
 - **category/:topic** (Technology, LifeStyle, Sports) - Displays articles categorised by subject. Within here you can filter results based off user preference. 
 - **/about** - Gives a description of the project.
 - **articles/:article_id** - Displays the details of specified article, including its comments and an option to like the article and its comments. If a user is logged in, theres an input method to leave comments and delete previous comments. 
+
+- **Log In with any of these Usernames:**
+  - *tickle122*
+  - *grumpy19*
+  - *happyamy2016*
+  - *cooljmessy*
+  - *weegembump*
+  - *jessjelly*
   
 # :electric_plug: Dependencies
   
