@@ -1,3 +1,5 @@
+<div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: CLICK HERE TO LIVE VERSION :point_left: :point_left: <a><div>
+  
 # :question: Purpose
 
 - This is my personal Front-End project created as part of a one-week solo sprint while I was a student at Northcoders. 
@@ -97,4 +99,6 @@ notes
 
 ### [WEBSITE](https://burnet-news.netlify.app/)
 
+  <div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: CLICK HERE TO LIVE VERSION :point_left: :point_left: <a><div>
+  
 
