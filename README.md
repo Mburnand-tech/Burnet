@@ -85,7 +85,7 @@ If you would like to contribute to this project, please follow these steps:
 - Push to the branch: `git push origin your-branch-name`
 - Create a pull request
 
-notes
+<!-- notes
 
 - home page is ordered by date posted
 
@@ -93,7 +93,7 @@ notes
 
 - can delete comment if logged in as the same user
 
-- list all possible users to log in as 
+- list all possible users to log in as  -->
                                                                          
 
 <div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: HOSTED WEBSITE :point_left: :point_left: <a></div>
