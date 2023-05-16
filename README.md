@@ -22,10 +22,10 @@
   
 The app has the following main pages:
 
-- `**/**`  - Home page showing the abundances of different articles to entice user. Ordered by date posted similiar to a topical social media. 
-- `**category/:topic**` (Technology, LifeStyle, Sports) - Displays articles categorised by subject. Within here you can filter results based off user preference. 
-- `**/about**` - Gives a description of the project.
-- `**articles/:article_id**` - Displays the details of specified article, including its comments and an option to like the article and its comments. If a user is logged in, theres an input method to leave comments and delete previous comments. 
+- **`/`**  - Home page showing the abundances of different articles to entice user. Ordered by date posted similiar to a topical social media. 
+- **`category/:topic`** (Technology, LifeStyle, Sports) - Displays articles categorised by subject. Within here you can filter results based off user preference. 
+- **`/about`** - Gives a description of the project.
+- **`articles/:article_id`** - Displays the details of specified article, including its comments and an option to like the article and its comments. If a user is logged in, theres an input method to leave comments and delete previous comments. 
 
 - Log In with any of these Usernames:
   - *tickle122*
