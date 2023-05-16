@@ -1,11 +1,12 @@
+# Burnet
 <div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: HOSTED WEBSITE :point_left: :point_left: <a></div>
   
-# :question: Purpose
+## :question: Purpose
 
 - This is my personal Front-End project created as part of a one-week solo sprint while I was a student at Northcoders. 
 - Coupled with my [Backend-Project](https://github.com/Mburnand-tech/News_Server) the intention is to remonstrate I am capable of developing, usable and efficient full stack applications in JavaScript. 
 
-# :microphone: Descripion
+## :microphone: Descripion
   
 - It is a Reddit-inspired topical discussion site with a scrollable and responsive display that allows users to like articles and comments and post comments on articles. 
 - The Front-End is built using React, with Axios for making API requests and MUI for styled components. 
@@ -18,7 +19,7 @@
   - Leave & delete comments functionality.
   - Date's sensitive to minutes ago from present. 
 
-# :video_game: Usage
+## :video_game: Usage
   
 The app has the following main pages:
 
@@ -35,7 +36,7 @@ The app has the following main pages:
   - *weegembump*
   - *jessjelly*
 
-# 📸 Screenshots
+## 📸 Screenshots
 
 <img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976">
 
@@ -50,7 +51,7 @@ The app has the following main pages:
 <img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/c6eae56d-04be-4688-b1d5-a10f50493250">
 
 
-# :computer: Installation
+## :computer: Installation
   
 To install the app locally, follow these steps:
 
@@ -68,7 +69,7 @@ To install the app locally, follow these steps:
   ```
 - The app should be running on http://localhost:3000
   
-# :electric_plug: Dependencies
+## :electric_plug: Dependencies
   
 This project requires the following dependencies:
 
@@ -84,7 +85,7 @@ This project requires the following dependencies:
 
 - These dependencies are included in the package.json file and will be installed automatically with npm install.
 
-# :earth_africa: Contributing
+## :earth_africa: Contributing
   
 If you would like to contribute to this project, please follow these steps:
 
