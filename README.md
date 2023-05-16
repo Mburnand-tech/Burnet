@@ -58,8 +58,10 @@ To install the app locally, follow these steps:
   ```bash
   git clone https://github.com/Mburnand-tech/NC_News.git`
   ```
-- Install dependencies: ```npm install```
-- Start the app: ```npm start```
+- Install dependencies: 
+  ```npm install```
+- Start the app: 
+  ```npm start```
 - The app should be running on http://localhost:3000
   
 # :electric_plug: Dependencies
