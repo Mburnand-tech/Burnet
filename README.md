@@ -16,8 +16,7 @@
   - Leave & delete comments functionality.
   - Date's sensitive to minutes ago from present. 
 
-You can try out a live version of the app here:
---------------------------------------------------------> ### [Website](https://burnet-news.netlify.app/) <--------------------------------------------------------
+You can try out a live version of the app **[here](https://burnet-news.netlify.app/)**
 
 # :video_game: Usage
   
@@ -96,6 +95,6 @@ notes
 
 - list all possible users to log in as 
 
-
+### [Website](https://burnet-news.netlify.app/)
 
 
