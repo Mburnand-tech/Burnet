@@ -21,17 +21,17 @@ You can try out a live version of the app here:
 
 PICTURES
 
-<img width="525" height="263" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976">
+<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976">
 
-<img width="525" height="263" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/01e00fbf-6331-4620-b84e-52986dd435bd">
+<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/01e00fbf-6331-4620-b84e-52986dd435bd">
 
-<img width="450" height="225" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/2fe60887-6e16-4067-a78d-01d7c3842e2a">
+<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/2fe60887-6e16-4067-a78d-01d7c3842e2a">
 
-<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/85700fdc-3122-44ff-ba73-7c3032f7e967">
+<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/85700fdc-3122-44ff-ba73-7c3032f7e967">
 
-<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/55759a61-4213-4bb7-b142-7264ea32e4f7">
+<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/55759a61-4213-4bb7-b142-7264ea32e4f7">
 
-<img width="400" height="200" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/c6eae56d-04be-4688-b1d5-a10f50493250">
+<img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/c6eae56d-04be-4688-b1d5-a10f50493250">
 
 
 - **Log In with any of these Usernames:**
