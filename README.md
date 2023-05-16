@@ -1,4 +1,4 @@
-# NC_ news (Burnent)
+# NC_News (Burnnet)
 <div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: HOSTED WEBSITE :point_left: :point_left: <a></div>
   
 ## :question: Purpose
