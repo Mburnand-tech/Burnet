@@ -56,14 +56,16 @@ To install the app locally, follow these steps:
 
 - Clone the repository: 
   ```bash
-  git clone https://github.com/Mburnand-tech/NC_News.git`
+  git clone https://github.com/Mburnand-tech/NC_News.git
   ```
 - Install dependencies: 
   ```bash 
-  npm install```
+  npm install
+  ```
 - Start the app: 
   ```bash
-  npm start```
+  npm start
+  ```
 - The app should be running on http://localhost:3000
   
 # :electric_plug: Dependencies
@@ -89,13 +91,16 @@ If you would like to contribute to this project, please follow these steps:
 - Fork the repository
 - Create a new branch: 
   ```bash
-  git checkout -b your-branch-name```
+  git checkout -b your-branch-name
+  ```
 - Make your changes and commit them: 
   ```bash
-  git commit -m "your commit message"```
+  git commit -m "your commit message"
+  ```
 - Push to the branch: 
   ```bash
-  git push origin your-branch-name```
+  git push origin your-branch-name
+  ```
 - Create a pull request
 
 <!-- notes
