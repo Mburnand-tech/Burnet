@@ -1,4 +1,5 @@
 You can try out a live version of the app **[HERE](https://burnet-news.netlify.app/)**
+**[CLICK HERE TO LIVE VERSION](https://burnet-news.netlify.app/)**
 
 # :question: Purpose
 
