@@ -1,4 +1,4 @@
-<div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: CLICK FOR LIVE VERSION :point_left: :point_left: <a><div>
+<!-- <div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: CLICK FOR LIVE VERSION :point_left: :point_left: <a><div> -->
   
 # :question: Purpose
 
