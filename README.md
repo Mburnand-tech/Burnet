@@ -1,6 +1,5 @@
-<div align="left"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: CLICK FOR LIVE VERSION :point_left: :point_left: <a><div>
-<div align="left>
-# :question: Purpose
+<div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: CLICK FOR LIVE VERSION :point_left: :point_left: <a><div>
+<div align="left># :question: Purpose
 
 - This is my personal Front-End project created as part of a one-week solo sprint while I was a student at Northcoders. 
 - Coupled with my [Backend-Project](https://github.com/Mburnand-tech/News_Server) the intention is to remonstrate I am capable of developing, usable and efficient full stack applications in JavaScript. 
