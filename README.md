@@ -17,7 +17,7 @@
   - Date's sensitive to minutes ago from present. 
 
 You can try out a live version of the app here:
-### [Website](https://burnet-news.netlify.app/)
+--------------------------------------------------------> ### [Website](https://burnet-news.netlify.app/) <--------------------------------------------------------
 
 # :video_game: Usage
   
