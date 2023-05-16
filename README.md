@@ -19,7 +19,24 @@
 You can try out a live version of the app here:
 ### [Website](https://burnet-news.netlify.app/)
 
-PICTURES
+# :video_game: Usage
+  
+The app has the following main pages:
+
+- **/**  - Home page showing the abundances of different articles to entice user. Ordered by date posted similiar to a topical social media. 
+- **category/:topic** (Technology, LifeStyle, Sports) - Displays articles categorised by subject. Within here you can filter results based off user preference. 
+- **/about** - Gives a description of the project.
+- **articles/:article_id** - Displays the details of specified article, including its comments and an option to like the article and its comments. If a user is logged in, theres an input method to leave comments and delete previous comments. 
+
+- **Log In with any of these Usernames:**
+  - *tickle122*
+  - *grumpy19*
+  - *happyamy2016*
+  - *cooljmessy*
+  - *weegembump*
+  - *jessjelly*
+
+# 📸 Screenshots
 
 <img width="500" height="250" alt="Screenshot (4)" src="https://github.com/Mburnand-tech/NC_News/assets/82216191/b6f9edfc-4025-43d7-9a2c-a86c18910976">
 
@@ -42,23 +59,6 @@ To install the app locally, follow these steps:
 - Install dependencies: `npm install`
 - Start the app: `npm start`
 - The app should be running on http://localhost:3000
-
-# :video_game: Usage
-  
-The app has the following main pages:
-
-- **/**  - Home page showing the abundances of different articles to entice user. Ordered by date posted similiar to a topical social media. 
-- **category/:topic** (Technology, LifeStyle, Sports) - Displays articles categorised by subject. Within here you can filter results based off user preference. 
-- **/about** - Gives a description of the project.
-- **articles/:article_id** - Displays the details of specified article, including its comments and an option to like the article and its comments. If a user is logged in, theres an input method to leave comments and delete previous comments. 
-
-- **Log In with any of these Usernames:**
-  - *tickle122*
-  - *grumpy19*
-  - *happyamy2016*
-  - *cooljmessy*
-  - *weegembump*
-  - *jessjelly*
   
 # :electric_plug: Dependencies
   
