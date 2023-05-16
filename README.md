@@ -1,5 +1,4 @@
-You can try out a live version of the app **[HERE](https://burnet-news.netlify.app/)**
-**[CLICK HERE TO LIVE VERSION](https://burnet-news.netlify.app/)**
+ :point_right: :point_right: **[CLICK HERE TO LIVE VERSION](https://burnet-news.netlify.app/)**
 
 # :question: Purpose
 
@@ -96,6 +95,6 @@ notes
 
 - list all possible users to log in as 
 
-### [Website](https://burnet-news.netlify.app/)
+### [WEBSITE](https://burnet-news.netlify.app/)
 
 
