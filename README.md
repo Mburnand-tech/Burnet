@@ -1,4 +1,4 @@
- :point_right: :point_right: **[CLICK HERE TO LIVE VERSION](https://burnet-news.netlify.app/)**
+ :point_right: :point_right: **[CLICK HERE TO LIVE VERSION](https://burnet-news.netlify.app/)** :point_left: :point_left:
 
 # :question: Purpose
 
