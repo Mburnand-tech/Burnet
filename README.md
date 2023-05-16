@@ -5,7 +5,7 @@
 
 # :microphone: Descripion
 
- :point_right: :point_right: **[CLICK HERE TO LIVE VERSION](https://burnet-news.netlify.app/)** :point_left: :point_left:
+<div align="center"> :point_right: :point_right: **[CLICK HERE TO LIVE VERSION](https://burnet-news.netlify.app/)** :point_left: :point_left: <div>
   
 - It is a Reddit-inspired topical discussion site with a scrollable and responsive display that allows users to like articles and comments and post comments on articles. 
 - The Front-End is built using React, with Axios for making API requests and MUI for styled components. 
