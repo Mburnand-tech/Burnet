@@ -1,3 +1,5 @@
+You can try out a live version of the app **[HERE](https://burnet-news.netlify.app/)**
+
 # :question: Purpose
 
 - This is my personal Front-End project created as part of a one-week solo sprint while I was a student at Northcoders. 
@@ -15,8 +17,6 @@
   - Scroll to top button.
   - Leave & delete comments functionality.
   - Date's sensitive to minutes ago from present. 
-
-You can try out a live version of the app **[HERE](https://burnet-news.netlify.app/)**
 
 # :video_game: Usage
   
