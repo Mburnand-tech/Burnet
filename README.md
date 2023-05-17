@@ -8,7 +8,7 @@
 
 ## :memo: Description
   
-- It is a Reddit-inspired topical discussion site with a scrollable and responsive display that allows users to 'like' articles and comments, and 'post' comments on articles. 
+- It is a Reddit-inspired topical discussion site with a scrollable and responsive display that allows users to 'like' articles/comments and 'post' comments on articles. 
 - The Front-End is built using React, with Axios for making API requests and MUI for styled components. 
   
 - Additional features include:
