@@ -69,7 +69,7 @@ To install the app locally, follow these steps:
   ```
 - The app should be running on http://localhost:3000
   
-## :electric_plug: Dependencies
+## :scroll: Dependencies
   
 This project requires the following dependencies:
 
