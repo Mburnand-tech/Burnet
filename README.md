@@ -16,7 +16,7 @@
   - Account login.
   - Colour theme switch.
   - Scroll-to-top button.
-  - Leave & delete comments functionality.
+  - Post & delete comment functionality.
   - Date's sensitive to minutes ago from present. 
 
 ## :video_game: Usage
