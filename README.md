@@ -17,7 +17,7 @@
   - Colour theme switch.
   - Scroll-to-top button.
   - Post & delete comment functionality.
-  - Date's sensitive to minutes ago from present. 
+  - Time sensitive to minutes ago from present. 
 
 ## :video_game: Usage
   
