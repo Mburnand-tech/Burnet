@@ -6,7 +6,7 @@
 - This is my personal Front-End project created as part of a one-week solo sprint while I was a student at Northcoders. 
 - Coupled with my [Back-End](https://github.com/Mburnand-tech/News_Server) project the intention is to demonstrate I am capable of developing, usable and efficient full-stack applications in JavaScript. 
 
-## :memo: Descripion
+## :memo: Description
   
 - It is a Reddit-inspired topical discussion site with a scrollable and responsive display that allows users to like articles and comments and post comments on articles. 
 - The Front-End is built using React, with Axios for making API requests and MUI for styled components. 
