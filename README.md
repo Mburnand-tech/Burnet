@@ -13,7 +13,7 @@
   
 - Additional features include:
   - Filter bar.
-  - Account logging in.
+  - Account login.
   - Colour theme switch.
   - Scroll to top button.
   - Leave & delete comments functionality.
