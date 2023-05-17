@@ -15,7 +15,7 @@
   - Filter bar.
   - Account login.
   - Colour theme switch.
-  - Scroll to top button.
+  - Scroll-to-top button.
   - Leave & delete comments functionality.
   - Date's sensitive to minutes ago from present. 
 
