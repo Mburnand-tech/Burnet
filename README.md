@@ -9,7 +9,7 @@
 ## :memo: Description
   
 - It is a Reddit-inspired topical discussion site with a scrollable and responsive display that allows users to 'like' articles/comments and 'post' comments on articles. 
-- The Front-End is built using React, with Axios for making API requests and MUI for styled components. 
+- The Front-End is built using React, with Axios for making API requests and MUI for styled-components. 
   
 - Additional features include:
   - Filter bar.
@@ -17,16 +17,16 @@
   - Colour theme switch.
   - Scroll-to-top button.
   - Post & delete comment functionality.
-  - Time sensitive to minutes ago from present. 
+  - Time sensitive to minutes ago from the present. 
 
 ## :video_game: Usage
   
 The app has the following main pages:
 
-- **`/`**  - Home page showing various articles of different subjects. Ordered by date posted, similiar to a topical social media site. 
-- **`/category/:topic`** (Technology, LifeStyle, Sports) - Displays articles categorised by subject. Here you can filter results based off user preference. 
+- **`/`**  - A home page showing various articles on different subjects. Ordered by date posted, similar to a topical social media site. 
+- **`/category/:topic`** (Technology, LifeStyle, Sports) - Displays articles categorised by subject. Here you can filter results based on user preference. 
 - **`/about`** - Gives a description of the project.
-- **`/articles/:article_id`** - Displays the details of specified article, including its comments, and an option to 'like' the article and its comments. If a user is logged in, there is an option to post comments and delete previous comments of that user. 
+- **`/articles/:article_id`** - Displays the details of the specified article, including its comments, and an option to 'like' the article and its comments. If a user is logged in, there is an option to post comments and delete previous comments of that user. 
 
 - LogIn with any of these Usernames:
   - *tickle122*
@@ -73,7 +73,7 @@ To install the app locally, follow these steps:
   
 This project requires the following dependencies:
 
-- axios: for making API requests
+- Axios: for making API requests
 - moment: for time data conversion
 - animate.css: for 'About' page animations
 - prop-types: for defining prop types
