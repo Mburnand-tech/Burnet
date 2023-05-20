@@ -1,5 +1,6 @@
 # NC_News (Burnnet)
 <div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: HOSTED WEBSITE :point_left: :point_left: <a></div>
+<div align="center">(API takes 60 seconds to spin up on first request as I'm using a free service)</div>
   
 ## :question: Purpose
 
