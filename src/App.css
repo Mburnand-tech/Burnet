@@ -135,7 +135,7 @@
 .themeButton{
   position: relative;
   float: right;
-  top: 10px;
+  top: -30px;
   left:75%;
   margin-right: 20%;
 }
