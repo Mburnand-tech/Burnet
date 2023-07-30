@@ -5,7 +5,7 @@
 ## :question: Purpose
 
 - This is my personal Front-End project created as part of a one-week solo sprint while I was a student at Northcoders. 
-- Coupled with my [Back-End](https://github.com/Mburnand-tech/News_Server) project the intention is to demonstrate I am capable of developing usable and efficient full-stack applications in JavaScript. 
+- Coupled with my [Back-End](https://github.com/Mburnand-tech/News_Server) project the intention is to demonstrate I am capable of developing, usable and efficient full-stack applications in JavaScript. 
 
 ## :memo: Description
   
