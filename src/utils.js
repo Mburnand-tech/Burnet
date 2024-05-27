@@ -1,8 +1,13 @@
 import axios from 'axios'
 
+
 const homeAPI = axios.create({
-    baseURL: "https://nc-news-matts-personal-project.onrender.com"
-})
+    baseURL: 'http://ec2-18-130-187-9.eu-west-2.compute.amazonaws.com',
+    headers: {
+        'Content-Type': 'application/json',
+        'accept': 'application/json'
+    }
+});
 
 export const fetchAllArticles = (configObj) => {
     //console.log(configObj, "On other side")
