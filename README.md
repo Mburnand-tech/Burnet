@@ -1,4 +1,7 @@
 # NC_News (Burnnet)
+<div align="center"><a href='http://ec2-18-130-187-9.eu-west-2.compute.amazonaws.com/)/'> :point_right: :point_right: HOSTED WEBSITE :point_left: :point_left: <a></div>
+<div align="center">(API takes 60 seconds to spin up on first request as it's a free hosting service)</div>
+
 <div align="center"><a href='https://burnet-news.netlify.app/'> :point_right: :point_right: HOSTED WEBSITE :point_left: :point_left: <a></div>
 <div align="center">(API takes 60 seconds to spin up on first request as it's a free hosting service)</div>
   
